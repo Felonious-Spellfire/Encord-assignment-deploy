@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map>
+   <appContext helpID="solution_intro" path="solution_intro.html"/>
+   <appContext helpID="web_app_help" path="web_app_help.html"/>
+   <appContext helpID="about_encord" path="about_encord.html"/>
+   <appContext helpID="guidelines_for_optimal_performance"
+               path="guidelines_for_optimal_performance.html"/>
+   <appContext helpID="encord_python_sdk" path="encord_python_sdk.html"/>
+   <appContext helpID="about_encord" path="about_encord.html"/>
+   <appContext helpID="datasets" path="datasets.html"/>
+   <appContext helpID="sdk_reference" path="sdk_reference.html"/>
+   <appContext helpID="dataset_sdk" path="dataset_sdk.html"/>
+</map>

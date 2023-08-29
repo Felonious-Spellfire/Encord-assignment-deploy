@@ -1,0 +1,583 @@
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" data-whc_version="25.1">
+    <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><meta name="description" content="Datasets consist of data you want to label. They are top-level entities in Encord, which means that a given dataset can be attached to multiple projects, and projects may be attached to more than one ..."/><meta name="DC.rights.owner" content="(C) Copyright 2023"/><meta name="copyright" content="(C) Copyright 2023"/><meta name="generator" content="DITA-OT"/><meta name="DC.type" content="topic"/><meta name="DC.relation" content="encord_python_sdk.html"/><meta name="DC.format" content="HTML5"/><meta name="DC.identifier" content="datasets"/><title>Datasets</title><!--  Generated with Oxygen version 25.1, build number 2023063023.  --><meta name="wh-path2root" content=""/><meta name="wh-toc-id" content="datasets-d215e61"/><meta name="wh-source-relpath" content="datasets.dita"/><meta name="wh-out-relpath" content="datasets.html"/>
+
+    <link rel="stylesheet" type="text/css" href="./oxygen-webhelp/app/commons.css?buildId=2023063023"/>
+    <link rel="stylesheet" type="text/css" href="./oxygen-webhelp/app/topic.css?buildId=2023063023"/>
+
+    <script src="./oxygen-webhelp/app/options/properties.js?buildId=20230829053529"></script>
+    <script src="./oxygen-webhelp/app/localization/strings.js?buildId=2023063023"></script>
+    <script src="./oxygen-webhelp/app/search/index/keywords.js?buildId=20230829053529"></script>
+    <script defer="defer" src="./oxygen-webhelp/app/commons.js?buildId=2023063023"></script>
+    <script defer="defer" src="./oxygen-webhelp/app/topic.js?buildId=2023063023"></script>
+<link rel="stylesheet" type="text/css" href="oxygen-webhelp/template/oxygen.css?buildId=2023063023"/><link rel="stylesheet" type="text/css" href="oxygen-webhelp/template/notes.css?buildId=2023063023"/></head>
+
+    <body id="datasets" class="wh_topic_page frmBody">
+        <a href="#wh_topic_body" class="sr-only sr-only-focusable">
+            Jump to main content
+        </a>
+        
+        
+        
+        
+        <header class="navbar navbar-default wh_header">
+    <div class="container-fluid">
+        <div class="wh_header_flex_container navbar-nav navbar-expand-md navbar-dark">
+            <div class="wh_logo_and_publication_title_container">
+                <div class="wh_logo_and_publication_title">
+                    
+                    
+                    <div class=" wh_publication_title "><a href="index.html"><span class="title">Encord Assignment</span></a></div>
+                    
+                </div>
+                
+                <button type="button" data-target="#wh_top_menu_and_indexterms_link" id="wh_menu_mobile_button" data-toggle="collapse" class="navbar-toggler collapsed wh_toggle_button" aria-expanded="false" aria-label="Toggle menu" aria-controls="wh_top_menu_and_indexterms_link">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+
+            <div class="wh_top_menu_and_indexterms_link collapse navbar-collapse" id="wh_top_menu_and_indexterms_link">
+                
+                <nav class=" wh_top_menu " aria-label="Menu Container"><ul role="menubar" aria-label="Menu"><li role="menuitem"><span id="solution_intro-d215e11-mi" data-tocid="solution_intro-d215e11" data-state="leaf" class=" topicref " data-id="solution_intro"><span class="title"><a href="solution_intro.html">Solution Intro</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="web_app_help-d215e20-mi" data-tocid="web_app_help-d215e20" data-state="not-ready" class=" topicref " data-id="web_app_help"><span class="title"><a href="web_app_help.html">Web-App Help</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="encord_python_sdk-d215e45-mi" data-tocid="encord_python_sdk-d215e45" data-state="not-ready" class=" topicref " data-id="encord_python_sdk"><span class="title"><a href="encord_python_sdk.html">Encord Python SDK</a></span></span></li></ul></nav>
+                
+                
+            </div>
+        </div>
+    </div>
+</header>
+        
+        
+         
+        
+        <div class=" wh_search_input navbar-form wh_topic_page_search search " role="form">
+            
+            
+            
+            <form id="searchForm" method="get" role="search" action="search.html"><div><input type="search" placeholder="Search " class="wh_search_textfield" id="textToSearch" name="searchQuery" aria-label="Search query" required="required"/><button type="submit" class="wh_search_button" aria-label="Search"><span class="search_input_text">Search</span></button></div></form>
+            
+            
+            
+        </div>
+        
+        <div class="container-fluid" id="wh_topic_container">
+            <div class="row">
+
+                <nav class="wh_tools d-print-none navbar-expand-md" aria-label="Tools">
+                    
+                    <div data-tooltip-position="bottom" class=" wh_breadcrumb "><ol class="d-print-none"><li><span class="home"><a href="index.html"><span>Home</span></a></span></li><li><div class="topicref" data-id="encord_python_sdk"><div class="title"><a href="encord_python_sdk.html">Encord Python SDK</a></div></div></li><li class="active"><div class="topicref" data-id="datasets"><div class="title"><a href="datasets.html">Datasets</a></div></div></li></ol></div>
+                    
+                    
+                    
+                    <div class="wh_right_tools">
+                        <button class="wh_hide_highlight" aria-label="Toggle search highlights" title="Toggle search highlights"></button>
+                        <button class="webhelp_expand_collapse_sections" data-next-state="collapsed" aria-label="Collapse sections" title="Collapse sections"></button>
+                        
+                        
+                        
+                        
+                        <div class=" wh_print_link print d-none d-md-inline-block "><button onClick="window.print()" title="Print this page" aria-label="Print this page"></button></div>
+                        
+                        <button type="button" id="wh_toc_button" class="custom-toggler navbar-toggler collapsed wh_toggle_button navbar-light" aria-expanded="false" aria-label="Toggle publishing table of content" aria-controls="wh_publication_toc">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </div>
+                    
+                </nav>
+            </div>
+            
+            
+            
+            
+            <div class="wh_content_area">
+                <div class="row">
+                    
+                        <nav id="wh_publication_toc" class="col-lg-3 col-md-3 col-sm-12 d-md-block d-none d-print-none" aria-label="Table of Contents Container">
+                            <div id="wh_publication_toc_content">
+		                        
+                            	<div class=" wh_publication_toc " data-tooltip-position="right"><span class="expand-button-action-labels"><span id="button-expand-action" role="button" aria-label="Expand"></span><span id="button-collapse-action" role="button" aria-label="Collapse"></span><span id="button-pending-action" role="button" aria-label="Pending"></span></span><ul role="tree" aria-label="Table of Contents"><li role="treeitem" aria-expanded="true"><div data-tocid="encord_python_sdk-d215e45" class="topicref" data-id="encord_python_sdk" data-state="expanded"><span role="button" tabindex="0" aria-labelledby="button-collapse-action encord_python_sdk-d215e45-link" class="wh-expand-btn"></span><div class="title"><a href="encord_python_sdk.html" id="encord_python_sdk-d215e45-link">Encord Python SDK</a></div></div><ul role="group" class="navbar-nav nav-list"><li role="treeitem"><div data-tocid="about_encord-d215e53" class="topicref" data-id="about_encord" data-state="leaf"><span role="button" class="wh-expand-btn"></span><div class="title"><a href="about_encord_2.html" id="about_encord-d215e53-link">Introduction to Encord</a></div></div></li><li role="treeitem" class="active"><div data-tocid="datasets-d215e61" class="topicref" data-id="datasets" data-state="leaf"><span role="button" class="wh-expand-btn"></span><div class="title"><a href="datasets.html" id="datasets-d215e61-link">Datasets</a></div></div></li><li role="treeitem" aria-expanded="false"><div data-tocid="sdk_reference-d215e69" class="topicref" data-id="sdk_reference" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action sdk_reference-d215e69-link" class="wh-expand-btn"></span><div class="title"><a href="sdk_reference.html" id="sdk_reference-d215e69-link">SDK Reference</a></div></div></li></ul></li></ul></div>
+		                        
+                            </div>
+                        </nav>
+                    
+                    
+                    <div class="col-lg-7 col-md-9 col-sm-12" id="wh_topic_body">
+                        <button id="wh_close_publication_toc_button" class="close-toc-button d-none" aria-label="Toggle publishing table of content" aria-controls="wh_publication_toc" aria-expanded="true">
+                            <span class="close-toc-icon-container">
+                                <span class="close-toc-icon"></span>     
+                            </span>
+                        </button>
+                        <button id="wh_close_topic_toc_button" class="close-toc-button d-none" aria-label="Toggle topic table of content" aria-controls="wh_topic_toc" aria-expanded="true">
+                            <span class="close-toc-icon-container">
+                                <span class="close-toc-icon"></span>     
+                            </span>
+                        </button>
+                        
+                        <div class=" wh_topic_content body "><main role="main"><article class="- topic/topic topic" role="article" aria-labelledby="ariaid-title1">
+    <h1 class="- topic/title title topictitle1" id="ariaid-title1">Datasets</h1>
+    <div class="- topic/body body">
+        <p class="- topic/p p">Datasets consist of data you want to label. They are top-level
+                entities in Encord, which means that a given dataset can be attached to multiple
+                projects, and projects may be attached to more than one dataset at a time.</p>
+        <p class="- topic/p p">Each dataset can have a list of <code class="+ topic/ph pr-d/codeph ph codeph">DataRows</code> which are the individual
+            videos, image groups, images, or DICOM series within the dataset.</p>
+    </div>
+    <article class="- topic/topic topic nested1" aria-labelledby="ariaid-title2" id="topic_nz2_gml_pyb">
+        <h2 class="- topic/title title topictitle2" id="ariaid-title2">Create a Dataset</h2>
+        <div class="- topic/body body">
+            <p class="- topic/p p">To create a dataset, first select where your data will be hosted with the appropriate
+                    <a class="- topic/xref xref" href="https://python.docs.encord.com/api.html#encord.orm.dataset.StorageLocation" target="_blank" rel="external noopener"><code class="+ topic/ph pr-d/codeph ph codeph">StorageLocation</code></a>.  Encord
+                currently supports the following for hosting your data:</p>
+            <ul class="- topic/ul ul" id="topic_nz2_gml_pyb__ul_s4h_zrl_pyb" data-ofbid="topic_nz2_gml_pyb__ul_s4h_zrl_pyb">
+                <li class="- topic/li li">
+                    <p class="- topic/p p">Local storage: <code class="+ topic/ph pr-d/codeph ph codeph">CORD_STORAGE</code></p>
+                </li>
+                <li class="- topic/li li">
+                    <p class="- topic/p p">AWS S3: <code class="+ topic/ph pr-d/codeph ph codeph">AWS</code></p>
+                </li>
+                <li class="- topic/li li">
+                    <p class="- topic/p p">GCP: <code class="+ topic/ph pr-d/codeph ph codeph">GCP</code></p>
+                </li>
+                <li class="- topic/li li">
+                    <p class="- topic/p p">Azure: <code class="+ topic/ph pr-d/codeph ph codeph">Azure</code></p>
+                </li>
+                <li class="- topic/li li">
+                    <p class="- topic/p p">Open Telekom Cloud: <code class="+ topic/ph pr-d/codeph ph codeph">OTC</code></p>
+                </li>
+            </ul>
+            <p class="- topic/p p">This example creates a dataset called “PPE Training Set 01” that expects data hosted
+                on AWS S3.</p>
+            <pre class="+ topic/pre pr-d/codeblock pre codeblock" id="topic_nz2_gml_pyb__codeblock_tbh_cql_pyb" data-ofbid="topic_nz2_gml_pyb__codeblock_tbh_cql_pyb"><code>from encord import EncordUserClient
+from encord.orm.dataset import CreateDatasetResponse, StorageLocation
+
+user_client: EncordUserClient = EncordUserClient.create_with_ssh_private_key(
+    "&lt;your_private_key&gt;"
+)
+
+dataset: CreateDatasetResponse = user_client.create_dataset(
+    "PPE Training Set 01", StorageLocation.AWS
+)
+print(dataset)</code></pre>
+            <p class="- topic/p p">Output</p>
+            <pre class="+ topic/pre pr-d/codeblock pre codeblock" id="topic_nz2_gml_pyb__codeblock_w3l_2ql_pyb" data-ofbid="topic_nz2_gml_pyb__codeblock_w3l_2ql_pyb"><code>{
+    "title": "PPE Training Set 01",
+    "type": 1,
+    "dataset_hash": "&lt;dataset_hash&gt;",
+    "user_hash": "&lt;user_hash&gt;",
+}</code></pre>
+            <p class="- topic/p p">This example creates the dataset "PPE Testing Set 01" and expects data to be local. </p>
+            <pre class="+ topic/pre pr-d/codeblock pre codeblock" id="topic_nz2_gml_pyb__codeblock_iq1_yql_pyb" data-ofbid="topic_nz2_gml_pyb__codeblock_iq1_yql_pyb"><code>from encord import EncordUserClient
+from encord.orm.dataset import CreateDatasetResponse, StorageLocation
+
+user_client: EncordUserClient = EncordUserClient.create_with_ssh_private_key(
+    "&lt;your_private_key&gt;"
+)
+
+dataset: CreateDatasetResponse = user_client.create_dataset(
+    "PPE Testing Set 01", StorageLocation.CORD_STORAGE
+)
+print(dataset)</code></pre>
+            <p class="- topic/p p">Output</p>
+            <pre class="+ topic/pre pr-d/codeblock pre codeblock" id="topic_nz2_gml_pyb__codeblock_qhl_yql_pyb" data-ofbid="topic_nz2_gml_pyb__codeblock_qhl_yql_pyb"><code>{
+    "title": "PPE Testing Set 01",
+    "type": 0,
+    "dataset_hash": "&lt;dataset_hash&gt;",
+    "user_hash": "&lt;user_hash&gt;",
+}</code></pre>
+        </div>
+    </article>
+    <article class="- topic/topic topic nested1" aria-labelledby="ariaid-title3" id="topic_dzj_gml_pyb">
+        <h2 class="- topic/title title topictitle2" id="ariaid-title3">Upload Data to Datasets</h2>
+        <div class="- topic/body body">
+            <p class="- topic/p p">Encord supports uploading data to datasets from local storage and from cloud
+                services. To upload data from cloud services, you must already have the cloud
+                services prepared. Refer to the documentation from the supported cloud services to
+                prepare those services.</p>
+        </div>
+        <article class="- topic/topic topic nested2" aria-labelledby="ariaid-title4" id="topic_lhz_fml_pyb">
+            <h3 class="- topic/title title topictitle3" id="ariaid-title4">Data Upload Guidelines</h3>
+            <div class="- topic/body body">
+                <p class="- topic/p p">While the Encord platform is able to handle large volumes
+                of data, we strongly recommend working within the following specifications to ensure
+                smooth operations and to limit loading times.</p>
+                <div class="- topic/note note note note_note" id="topic_lhz_fml_pyb__note_fsw_k4l_pyb" data-ofbid="topic_lhz_fml_pyb__note_fsw_k4l_pyb"><span class="note__title">Note:</span> 
+                <p class="- topic/p p">The specifications outlined below apply when using the SDK or the web-app.</p>
+            </div>
+                <div class="table-container"><table class="- topic/table table frame-all" id="topic_lhz_fml_pyb__table_vxg_tsp_pyb" data-ofbid="topic_lhz_fml_pyb__table_vxg_tsp_pyb" data-cols="4"><caption class="- topic/title title tablecap" data-caption-side="top" data-is-repeated="true"><span class="table--title-label">Table<span class="table--title-label-number"> 1</span><span class="table--title-label-punctuation">. </span></span><span class="table--title">Data Upload Specifications by Tier</span></caption><colgroup><col style="width:25%"/><col style="width:25%"/><col style="width:25%"/><col style="width:25%"/></colgroup><thead class="- topic/thead thead">
+                        <tr class="- topic/row">
+                            <th class="- topic/entry entry colsep-1 rowsep-1" id="topic_lhz_fml_pyb__table_vxg_tsp_pyb__entry__1">
+                                <p class="- topic/p p"><strong class="+ topic/ph hi-d/b ph b">Limit</strong></p>
+                            </th>
+                            <th class="- topic/entry entry colsep-1 rowsep-1" id="topic_lhz_fml_pyb__table_vxg_tsp_pyb__entry__2">
+                                <p class="- topic/p p"><strong class="+ topic/ph hi-d/b ph b">Enterprise</strong></p>
+                            </th>
+                            <th class="- topic/entry entry colsep-1 rowsep-1" id="topic_lhz_fml_pyb__table_vxg_tsp_pyb__entry__3">
+                                <p class="- topic/p p"><strong class="+ topic/ph hi-d/b ph b">Team</strong></p>
+                            </th>
+                            <th class="- topic/entry entry colsep-0 rowsep-1" id="topic_lhz_fml_pyb__table_vxg_tsp_pyb__entry__4">
+                                <p class="- topic/p p"><strong class="+ topic/ph hi-d/b ph b">Free</strong></p>
+                            </th>
+                        </tr>
+                    </thead><tbody class="- topic/tbody tbody">
+                        <tr class="- topic/row">
+                            <td class="- topic/entry entry colsep-1 rowsep-1" headers="topic_lhz_fml_pyb__table_vxg_tsp_pyb__entry__1">
+                                <p class="- topic/p p">Maximum number of data units</p>
+                            </td>
+                            <td class="- topic/entry entry colsep-1 rowsep-1" headers="topic_lhz_fml_pyb__table_vxg_tsp_pyb__entry__2">
+                                <p class="- topic/p p">5,000</p>
+                            </td>
+                            <td class="- topic/entry entry colsep-1 rowsep-1" headers="topic_lhz_fml_pyb__table_vxg_tsp_pyb__entry__3">
+                                <p class="- topic/p p">2,500</p>
+                            </td>
+                            <td class="- topic/entry entry colsep-0 rowsep-1" headers="topic_lhz_fml_pyb__table_vxg_tsp_pyb__entry__4">
+                                <p class="- topic/p p">1000</p>
+                            </td>
+                        </tr>
+                        <tr class="- topic/row">
+                            <td class="- topic/entry entry colsep-1 rowsep-1" headers="topic_lhz_fml_pyb__table_vxg_tsp_pyb__entry__1">
+                                <p class="- topic/p p">Maximum image/video/DICOM file size</p>
+                            </td>
+                            <td class="- topic/entry entry colsep-1 rowsep-1" headers="topic_lhz_fml_pyb__table_vxg_tsp_pyb__entry__2">
+                                <p class="- topic/p p"><strong class="+ topic/ph hi-d/b ph b">1 GB</strong></p>
+                            </td>
+                            <td class="- topic/entry entry colsep-1 rowsep-1" headers="topic_lhz_fml_pyb__table_vxg_tsp_pyb__entry__3">
+                                <p class="- topic/p p"><strong class="+ topic/ph hi-d/b ph b">1 GB</strong></p>
+                            </td>
+                            <td class="- topic/entry entry colsep-0 rowsep-1" headers="topic_lhz_fml_pyb__table_vxg_tsp_pyb__entry__4">
+                                <p class="- topic/p p"><strong class="+ topic/ph hi-d/b ph b">500 MB</strong></p>
+                            </td>
+                        </tr>
+                        <tr class="- topic/row">
+                            <td class="- topic/entry entry colsep-1 rowsep-1" headers="topic_lhz_fml_pyb__table_vxg_tsp_pyb__entry__1">
+                                <p class="- topic/p p">Maximum JSON file size</p>
+                            </td>
+                            <td class="- topic/entry entry colsep-1 rowsep-1" headers="topic_lhz_fml_pyb__table_vxg_tsp_pyb__entry__2">
+                                <p class="- topic/p p">100 MB</p>
+                            </td>
+                            <td class="- topic/entry entry colsep-1 rowsep-1" headers="topic_lhz_fml_pyb__table_vxg_tsp_pyb__entry__3">
+                                <p class="- topic/p p">100 MB</p>
+                            </td>
+                            <td class="- topic/entry entry colsep-0 rowsep-1" headers="topic_lhz_fml_pyb__table_vxg_tsp_pyb__entry__4">
+                                <p class="- topic/p p">10 MB</p>
+                            </td>
+                        </tr>
+                        <tr class="- topic/row">
+                            <td class="- topic/entry entry colsep-1 rowsep-1" headers="topic_lhz_fml_pyb__table_vxg_tsp_pyb__entry__1">
+                                <p class="- topic/p p">Maximum resolution</p>
+                            </td>
+                            <td class="- topic/entry entry colsep-1 rowsep-1" headers="topic_lhz_fml_pyb__table_vxg_tsp_pyb__entry__2">
+                                <p class="- topic/p p">4K (3840 x 2160 px)</p>
+                            </td>
+                            <td class="- topic/entry entry colsep-1 rowsep-1" headers="topic_lhz_fml_pyb__table_vxg_tsp_pyb__entry__3">
+                                <p class="- topic/p p">4K (3840 x 2160 px)</p>
+                            </td>
+                            <td class="- topic/entry entry colsep-0 rowsep-1" headers="topic_lhz_fml_pyb__table_vxg_tsp_pyb__entry__4">
+                                <p class="- topic/p p">4K (3840 x 2160 px)</p>
+                            </td>
+                        </tr>
+                        <tr class="- topic/row">
+                            <td class="- topic/entry entry colsep-1 rowsep-0" headers="topic_lhz_fml_pyb__table_vxg_tsp_pyb__entry__1">
+                                <p class="- topic/p p">Number of frames per video</p>
+                            </td>
+                            <td class="- topic/entry entry colsep-1 rowsep-0" headers="topic_lhz_fml_pyb__table_vxg_tsp_pyb__entry__2">
+                                <p class="- topic/p p">200,000 (2hrs at 30fps)</p>
+                            </td>
+                            <td class="- topic/entry entry colsep-1 rowsep-0" headers="topic_lhz_fml_pyb__table_vxg_tsp_pyb__entry__3">
+                                <p class="- topic/p p">200,000 (2hrs at 30fps)</p>
+                            </td>
+                            <td class="- topic/entry entry colsep-0 rowsep-0" headers="topic_lhz_fml_pyb__table_vxg_tsp_pyb__entry__4">
+                                <p class="- topic/p p">200,000 (2hrs at 30fps)</p>
+                            </td>
+                        </tr>
+                    </tbody></table></div>
+                <div class="table-container"><table class="- topic/table table frame-all" id="topic_lhz_fml_pyb__table_lqz_krp_pyb" data-ofbid="topic_lhz_fml_pyb__table_lqz_krp_pyb" data-cols="2"><caption class="- topic/title title tablecap" data-caption-side="top" data-is-repeated="true"><span class="table--title-label">Table<span class="table--title-label-number"> 2</span><span class="table--title-label-punctuation">. </span></span><span class="table--title">Supported Data Types</span></caption><colgroup><col style="width:20%"/><col style="width:80%"/></colgroup><thead class="- topic/thead thead">
+                        <tr class="- topic/row">
+                            <th class="- topic/entry entry colsep-1 rowsep-1" id="topic_lhz_fml_pyb__table_lqz_krp_pyb__entry__1">
+                                <p class="- topic/p p"><strong class="+ topic/ph hi-d/b ph b">File</strong></p>
+                            </th>
+                            <th class="- topic/entry entry colsep-0 rowsep-1" id="topic_lhz_fml_pyb__table_lqz_krp_pyb__entry__2">
+                                <p class="- topic/p p"><strong class="+ topic/ph hi-d/b ph b">Details</strong></p>
+                            </th>
+                        </tr>
+                    </thead><tbody class="- topic/tbody tbody">
+                        <tr class="- topic/row">
+                            <td class="- topic/entry entry colsep-1 rowsep-1" headers="topic_lhz_fml_pyb__table_lqz_krp_pyb__entry__1">
+                                <p class="- topic/p p">Single images</p>
+                            </td>
+                            <td class="- topic/entry entry colsep-0 rowsep-1" headers="topic_lhz_fml_pyb__table_lqz_krp_pyb__entry__2">
+                                <p class="- topic/p p">Single images are individual images that are uploaded to Encord
+                                    as separate files. Each single image constitutes its own data
+                                    package, hence images will be listed individually.</p>
+                                <p class="- topic/p p">We support the following file types for single images:</p>
+                                <p class="- topic/p p"><code class="+ topic/ph pr-d/codeph ph codeph">.jpeg</code>,  <code class="+ topic/ph pr-d/codeph ph codeph">.png</code>,  
+                                        <code class="+ topic/ph pr-d/codeph ph codeph">.webp</code>,  <code class="+ topic/ph pr-d/codeph ph codeph">.avif</code>,
+                                         <code class="+ topic/ph pr-d/codeph ph codeph">.bmp</code>,  <code class="+ topic/ph pr-d/codeph ph codeph">.tiff</code>*,  
+                                        <code class="+ topic/ph pr-d/codeph ph codeph">.tif</code>*</p>
+                            </td>
+                        </tr>
+                        <tr class="- topic/row">
+                            <td class="- topic/entry entry colsep-1 rowsep-1" headers="topic_lhz_fml_pyb__table_lqz_krp_pyb__entry__1">
+                                <p class="- topic/p p">Image groups</p>
+                            </td>
+                            <td class="- topic/entry entry colsep-0 rowsep-1" headers="topic_lhz_fml_pyb__table_lqz_krp_pyb__entry__2">
+                                <p class="- topic/p p">Image groups are collections of images that are grouped together
+                                    into a single data unit. They can contain images of varying
+                                    orientations and no data is lost in the process of creating an
+                                    image group.</p>
+                                <p class="- topic/p p">We support the following file types for image groups:</p>
+                                <p class="- topic/p p"><code class="+ topic/ph pr-d/codeph ph codeph">.jpeg</code>,  <code class="+ topic/ph pr-d/codeph ph codeph">.png</code>,  
+                                        <code class="+ topic/ph pr-d/codeph ph codeph">.webp</code>,  <code class="+ topic/ph pr-d/codeph ph codeph">.avif</code>,
+                                         <code class="+ topic/ph pr-d/codeph ph codeph">.bmp</code>,  <code class="+ topic/ph pr-d/codeph ph codeph">.tiff</code>*,  
+                                        <code class="+ topic/ph pr-d/codeph ph codeph">.tif</code>*</p>
+                            </td>
+                        </tr>
+                        <tr class="- topic/row">
+                            <td class="- topic/entry entry colsep-1 rowsep-1" headers="topic_lhz_fml_pyb__table_lqz_krp_pyb__entry__1">
+                                <p class="- topic/p p">Image sequences</p>
+                            </td>
+                            <td class="- topic/entry entry colsep-0 rowsep-1" headers="topic_lhz_fml_pyb__table_lqz_krp_pyb__entry__2">
+                                <p class="- topic/p p">Image sequences are collections of images that are grouped
+                                    together as a single data unit, and annotated in the same way as
+                                    videos.</p>
+                                <p class="- topic/p p">We support the following file types for image sequences:</p>
+                                <p class="- topic/p p"><code class="+ topic/ph pr-d/codeph ph codeph">.jpeg</code>,  <code class="+ topic/ph pr-d/codeph ph codeph">.png</code>,  
+                                        <code class="+ topic/ph pr-d/codeph ph codeph">.webp</code>,  <code class="+ topic/ph pr-d/codeph ph codeph">.avif</code>,
+                                         <code class="+ topic/ph pr-d/codeph ph codeph">.bmp</code>,  <code class="+ topic/ph pr-d/codeph ph codeph">.tiff</code>*,  
+                                        <code class="+ topic/ph pr-d/codeph ph codeph">.tif</code>*</p>
+                                <div class="- topic/note note warning note_warning" id="topic_lhz_fml_pyb__note_p4m_frp_pyb" data-ofbid="topic_lhz_fml_pyb__note_p4m_frp_pyb"><span class="note__title">Warning:</span> 
+                                    <p class="- topic/p p">If you upload your data from cloud storage using JSON or CSV
+                                        file formats, you retain full control over which image
+                                        sequence every image will end up in. However, if images you
+                                        choose to form into a sequence have varying dimensions they
+                                        will be homogenized. This means that every image within your
+                                        defined sequence will be made to have the same dimensions as
+                                        the first image in that sequence. As a result, data may be
+                                        lost when forming image sequences.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="- topic/row">
+                            <td class="- topic/entry entry colsep-1 rowsep-1" headers="topic_lhz_fml_pyb__table_lqz_krp_pyb__entry__1">
+                                <p class="- topic/p p">Videos</p>
+                            </td>
+                            <td class="- topic/entry entry colsep-0 rowsep-1" headers="topic_lhz_fml_pyb__table_lqz_krp_pyb__entry__2">
+                                <p class="- topic/p p">Video files can be uploaded onto the Encord platform and
+                                    annotated frame by frame, enabling you to track elements within
+                                    the video. Even though frames are treated as individual images
+                                    when being annotated, the video itself constitutes a single data
+                                    package.</p>
+                                <p class="- topic/p p">File uploads must be less than <strong class="+ topic/ph hi-d/b ph b">2 GB</strong> or 200,000 frames
+                                    (2hrs @ 30FPS).</p>
+                                <p class="- topic/p p">We currently support the following video file types:</p>
+                                <p class="- topic/p p"><code class="+ topic/ph pr-d/codeph ph codeph">.mp4</code>
+                                    <code class="+ topic/ph pr-d/codeph ph codeph">.mov</code>
+                                    <code class="+ topic/ph pr-d/codeph ph codeph">.webm</code>
+                                    <code class="+ topic/ph pr-d/codeph ph codeph">.mkv</code></p>
+                                <div class="- topic/note note tip note_tip" id="topic_lhz_fml_pyb__note_hmr_vrp_pyb" data-ofbid="topic_lhz_fml_pyb__note_hmr_vrp_pyb"><span class="note__title">Tip:</span> 
+                                    <p class="- topic/p p">For optimized performance we recommend using the following
+                                        video formats:</p>
+                                    <ul class="- topic/ul ul" id="topic_lhz_fml_pyb__ul_zmj_jdp_pyb" data-ofbid="topic_lhz_fml_pyb__ul_zmj_jdp_pyb">
+                                        <li class="- topic/li li">
+                                            <p class="- topic/p p"><code class="+ topic/ph pr-d/codeph ph codeph">.mp4</code> file with h.264.</p>
+                                        </li>
+                                        <li class="- topic/li li">
+                                            <p class="- topic/p p"><code class="+ topic/ph pr-d/codeph ph codeph">.mp4</code> with vp9.</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="- topic/row">
+                            <td class="- topic/entry entry colsep-1 rowsep-0" headers="topic_lhz_fml_pyb__table_lqz_krp_pyb__entry__1">
+                                <p class="- topic/p p">DICOM</p>
+                            </td>
+                            <td class="- topic/entry entry colsep-0 rowsep-0" headers="topic_lhz_fml_pyb__table_lqz_krp_pyb__entry__2">
+                                <p class="- topic/p p">Encord provides native support for Digital Imaging and
+                                    Communications in Medicine (DICOM) file formats. Because DICOM
+                                    is a large and open standard Encord accepts most data types. For
+                                    example: CT, MR, US, MG, TOMO, but Encord accepts many more than
+                                    these.</p>
+                                <p class="- topic/p p"><strong class="+ topic/ph hi-d/b ph b">Multi-frame DICOM Support</strong></p>
+                                <p class="- topic/p p">We support multi-frame DICOMs, making it even easier and faster
+                                    to load data onto our platform! Multi-frame DICOM support can
+                                    save time and streamline workflows due to a reduced amount of
+                                    header data repetition.</p>
+                                <p class="- topic/p p">Simply upload your multi-frame DICOM files like you would any
+                                    other files - using the web-app or using our Python SDK.</p>
+                            </td>
+                        </tr>
+                    </tbody></table></div>
+            </div>
+        </article>
+        <article class="- topic/topic topic nested2" aria-labelledby="ariaid-title5" id="topic_cq5_3dq_pyb">
+            <h3 class="- topic/title title topictitle3" id="ariaid-title5">Upload Local Data</h3>
+            <div class="- topic/body body">
+                <p class="- topic/p p">Uploading videos and images from local storage is a fairly direct process. </p>
+                <section class="- topic/section section" id="topic_cq5_3dq_pyb__section_sz1_djq_pyb" data-ofbid="topic_cq5_3dq_pyb__section_sz1_djq_pyb"><h4 class="- topic/title title sectiontitle">Upload Videos</h4>
+                    
+                    <p class="- topic/p p">Use the <a class="- topic/xref xref" href="dataset_sdk.html#topic_glz_xhq_pyb">upload_video</a> method to upload a
+                        video to a dataset using Encord storage.</p>
+                    <pre class="+ topic/pre pr-d/codeblock pre codeblock language-python" id="topic_cq5_3dq_pyb__codeblock_wzk_tjq_pyb" data-ofbid="topic_cq5_3dq_pyb__codeblock_wzk_tjq_pyb">dataset.upload_video(<span class="hl-string">"path/to/your/video.mp4"</span>)</pre>
+                    <p class="- topic/p p">This method uploads the specified video file to the dataset associated with
+                        the <a class="- topic/xref xref" href="https://python.docs.encord.com/api.html#encord.dataset.Dataset" target="_blank" rel="external noopener"><code class="+ topic/ph pr-d/codeph ph codeph">dataset</code></a>.</p>
+                </section>
+                <section class="- topic/section section" id="topic_cq5_3dq_pyb__section_jv3_2jq_pyb" data-ofbid="topic_cq5_3dq_pyb__section_jv3_2jq_pyb"><h4 class="- topic/title title sectiontitle">Upload Images</h4>
+                    
+                    <p class="- topic/p p">Use the <a class="- topic/xref xref" href="dataset_sdk.html#topic_jd4_zhq_pyb">create_image_group</a> method to upload
+                        images and create an image group using Encord storage.</p>
+                    <pre class="+ topic/pre pr-d/codeblock pre codeblock language-python" id="topic_cq5_3dq_pyb__codeblock_shh_5jq_pyb" data-ofbid="topic_cq5_3dq_pyb__codeblock_shh_5jq_pyb">dataset.create_image_group(
+    [
+        <span class="hl-string">"path/to/your/img1.jpeg"</span>,
+        <span class="hl-string">"path/to/your/img2.jpeg"</span>,
+    ]
+)</pre>
+                    <p class="- topic/p p">This method uploads the specified list of images to the dataset associated
+                        with the <a class="- topic/xref xref" href="https://python.docs.encord.com/api.html#encord.dataset.Dataset" target="_blank" rel="external noopener"><code class="+ topic/ph pr-d/codeph ph codeph">dataset</code></a> and
+                        creates an image group.</p>
+                    <div class="- topic/note note note note_note" id="topic_cq5_3dq_pyb__note_k2x_llq_pyb" data-ofbid="topic_cq5_3dq_pyb__note_k2x_llq_pyb"><span class="note__title">Note:</span> 
+                        <ul class="- topic/ul ul" id="topic_cq5_3dq_pyb__ul_cwk_mlq_pyb" data-ofbid="topic_cq5_3dq_pyb__ul_cwk_mlq_pyb">
+                            <li class="- topic/li li">
+                                <p class="- topic/p p">Image groups are images of the same resolution, so if
+                                        <code class="+ topic/ph pr-d/codeph ph codeph">img1.jpeg</code> and <code class="+ topic/ph pr-d/codeph ph codeph">img2.jpeg</code>
+                                    from the example above are <code class="+ topic/ph pr-d/codeph ph codeph">[1920, 1080]</code> and
+                                        <code class="+ topic/ph pr-d/codeph ph codeph">[1280, 720]</code>, respectively, they will end up
+                                    in each of their own image group.</p>
+                            </li>
+                            <li class="- topic/li li">
+                                <p class="- topic/p p">Images in an image group are assigned a
+                                        <code class="+ topic/ph pr-d/codeph ph codeph">data_sequence</code> number, which is based on the
+                                    order or the files listed in the argument to <a class="- topic/xref xref" href="https://python.docs.encord.com/api.html#encord.dataset.Dataset.create_image_group" target="_blank" rel="external noopener"><code class="+ topic/ph pr-d/codeph ph codeph">create_image_group</code></a>. If the
+                                    sequence is important, make sure to provide a list with
+                                    filenames in the correct order.</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <p class="- topic/p p">You can also upload individual images to a dataset using Encord storage with
+                        the method <a class="- topic/xref xref" href="https://python.docs.encord.com/api.html#encord.dataset.Dataset.upload_image" target="_blank" rel="external noopener"><code class="+ topic/ph pr-d/codeph ph codeph">upload_image()</code></a>.</p>
+                    <pre class="+ topic/pre pr-d/codeblock pre codeblock language-python" id="topic_cq5_3dq_pyb__codeblock_q2t_2kq_pyb" data-ofbid="topic_cq5_3dq_pyb__codeblock_q2t_2kq_pyb">dataset.upload_image(<span class="hl-string">"path/to/your/img1.jpeg"</span>)</pre>
+                </section>
+            </div>
+        </article>
+        <article class="- topic/topic topic nested2" aria-labelledby="ariaid-title6" id="topic_yrs_jdq_pyb">
+            <h3 class="- topic/title title topictitle3" id="ariaid-title6">Upload Cloud Service Data </h3>
+            <div class="- topic/body body">
+                <ol class="- topic/ol ol" id="topic_yrs_jdq_pyb__ol_hzd_rlq_pyb" data-ofbid="topic_yrs_jdq_pyb__ol_hzd_rlq_pyb">
+                    <li class="- topic/li li">
+                        <p class="- topic/p p">Use <a class="- topic/xref xref" href="https://python.docs.encord.com/api.html#encord.user_client.EncordUserClient.get_cloud_integrations" target="_blank" rel="external noopener"><code class="+ topic/ph pr-d/codeph ph codeph">user_client.get_cloud_integrations()</code></a>
+                            method to retrieve a list of available Cloud Integrations</p>
+                    </li>
+                    <li class="- topic/li li">
+                        <p class="- topic/p p">Grab the id from the integration of your choice and call <a class="- topic/xref xref" href="https://python.docs.encord.com/api.html#encord.dataset.Dataset.add_private_data_to_dataset" target="_blank" rel="external noopener"><code class="+ topic/ph pr-d/codeph ph codeph">dataset.add_private_data_to_dataset()</code></a>
+                            on the <code class="+ topic/ph pr-d/codeph ph codeph">dataset</code> with either the absolute path to a json
+                            file or a python dictionary in the format specified in the <a class="- topic/xref xref" href="https://docs.encord.com/docs/annotate-private-cloud-integration#json-format" target="_blank" rel="external noopener">Private cloud section</a> of the
+                            web-app datasets documentation</p>
+                    </li>
+                </ol>
+                <pre class="+ topic/pre pr-d/codeblock pre codeblock" id="topic_yrs_jdq_pyb__codeblock_mfw_rlq_pyb" data-ofbid="topic_yrs_jdq_pyb__codeblock_mfw_rlq_pyb"><code>from typing import List
+
+from encord import Dataset, EncordUserClient
+from encord.orm.cloud_integration import CloudIntegration
+from encord.orm.dataset import AddPrivateDataResponse, LongPollingStatus
+
+user_client: EncordUserClient = EncordUserClient.create_with_ssh_private_key(
+    "&lt;your_private_key&gt;"
+)
+dataset: Dataset = user_client.get_dataset("&lt;dataset_hash&gt;")
+
+# Choose integration
+integrations: List[CloudIntegration] = user_client.get_cloud_integrations()
+print("Integration Options:")
+print(integrations)
+
+integration_idx: int = [i.title for i in integrations].index("AWS")
+integration: str = integrations[integration_idx].id
+
+use_simple_api: bool = True
+
+# Check our documentation here: https://docs.encord.com/docs/annotate-private-cloud-integration#json-format
+# to make sure you upload your data in the correct format
+
+if use_simple_api:
+    # using add_private_data_to_dataset will start upload job and await for it to finish,
+    # then raise exception in case errors occur
+    response: AddPrivateDataResponse = dataset.add_private_data_to_dataset(
+        integration, "path/to/json/file.json"
+    )
+else:
+    # using add_private_data_to_dataset_start will only initialize job
+    upload_job_id: str = dataset.add_private_data_to_dataset_start(
+        integration, "path/to/json/file.json"
+    )
+
+    # at this point user can save upload_job_id externally, exit python process and
+    # check for status with add_private_data_to_dataset_get_result at any point in the future
+
+    # one can get job status without awaiting the final response, with timeout_seconds=0
+    # this will perform one quick call to encord backend for status check
+    print(
+        dataset.add_private_data_to_dataset_get_result(
+            upload_job_id,
+            timeout_seconds=0,
+        )
+    )
+
+    # using add_private_data_to_dataset_get_result without
+    # timeout_seconds will await for job to finish
+    res = dataset.add_private_data_to_dataset_get_result(upload_job_id)
+
+    if res.status == LongPollingStatus.DONE:
+        response = AddPrivateDataResponse(
+            dataset_data_list=res.data_hashes_with_titles
+        )
+    elif res.status == LongPollingStatus.ERROR:
+        raise Exception(res.errors)  # one can specify custom error handling
+    else:
+        raise ValueError(f"res.status={res.status}, this should never happen")
+
+print(response.dataset_data_list)</code></pre>
+            </div>
+        </article>
+    </article>
+</article></main></div>
+                        
+                        
+                        
+                        
+                        
+                        
+                    </div>
+                    
+                        <nav role="navigation" id="wh_topic_toc" aria-label="On this page" class="col-lg-2 d-none d-lg-block navbar d-print-none"> 
+                            <div id="wh_topic_toc_content">
+		                        
+	                            <div class=" wh_topic_toc "><div class="wh_topic_label">On this page</div><ul><li class="topic-item"><a href="#topic_nz2_gml_pyb" data-tocid="topic_nz2_gml_pyb">Create a Dataset</a></li><li class="topic-item"><a href="#topic_dzj_gml_pyb" data-tocid="topic_dzj_gml_pyb">Upload Data to Datasets</a><ul><li class="topic-item"><a href="#topic_lhz_fml_pyb" data-tocid="topic_lhz_fml_pyb">Data Upload Guidelines</a></li><li class="topic-item"><a href="#topic_cq5_3dq_pyb" data-tocid="topic_cq5_3dq_pyb">Upload Local Data</a><ul><li class="section-item"><div class="section-title"><a href="#topic_cq5_3dq_pyb__section_sz1_djq_pyb" data-tocid="topic_cq5_3dq_pyb__section_sz1_djq_pyb">Upload Videos</a></div></li><li class="section-item"><div class="section-title"><a href="#topic_cq5_3dq_pyb__section_jv3_2jq_pyb" data-tocid="topic_cq5_3dq_pyb__section_jv3_2jq_pyb">Upload Images</a></div></li></ul></li><li class="topic-item"><a href="#topic_yrs_jdq_pyb" data-tocid="topic_yrs_jdq_pyb">Upload Cloud Service Data </a></li></ul></li></ul></div>
+	                        	
+                        	</div>
+                        </nav>
+                    
+                </div>
+            </div>
+            
+            
+            
+        </div> 
+        <footer class="navbar navbar-default wh_footer">
+  <div class=" footer-container mx-auto ">
+    <div>Generated by <a class="oxyFooter" href="http://www.oxygenxml.com/xml_webhelp.html" target="_blank">
+ &lt;oXygen/&gt; XML WebHelp
+ </a></div>
+  </div>
+</footer>
+        
+        <div id="go2top" class="d-print-none">
+            <span class="oxy-icon oxy-icon-up"></span>
+        </div>
+        
+        <div id="modal_img_large" class="modal">
+            <span class="close oxy-icon oxy-icon-remove"></span>
+            <div id="modal_img_container"></div>
+            <div id="caption"></div>
+        </div>
+        
+        
+        
+    </body>
+</html>

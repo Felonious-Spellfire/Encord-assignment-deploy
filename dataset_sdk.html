@@ -1,0 +1,910 @@
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" data-whc_version="25.1">
+    <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><meta name="description" content="Access dataset related data and manipulate the dataset. property dataset_hash : str Get the dataset hash (for example the Dataset ID). Return type str property title : str Return type str property ..."/><meta name="DC.rights.owner" content="(C) Copyright 2023"/><meta name="copyright" content="(C) Copyright 2023"/><meta name="generator" content="DITA-OT"/><meta name="DC.type" content="topic"/><meta name="DC.relation" content="sdk_reference.html"/><meta name="DC.format" content="HTML5"/><meta name="DC.identifier" content="dataset_sdk"/><title>Dataset (SDK)</title><!--  Generated with Oxygen version 25.1, build number 2023063023.  --><meta name="wh-path2root" content=""/><meta name="wh-toc-id" content="dataset_sdk-d215e77"/><meta name="wh-source-relpath" content="dataset_sdk.dita"/><meta name="wh-out-relpath" content="dataset_sdk.html"/>
+
+    <link rel="stylesheet" type="text/css" href="./oxygen-webhelp/app/commons.css?buildId=2023063023"/>
+    <link rel="stylesheet" type="text/css" href="./oxygen-webhelp/app/topic.css?buildId=2023063023"/>
+
+    <script src="./oxygen-webhelp/app/options/properties.js?buildId=20230829053529"></script>
+    <script src="./oxygen-webhelp/app/localization/strings.js?buildId=2023063023"></script>
+    <script src="./oxygen-webhelp/app/search/index/keywords.js?buildId=20230829053529"></script>
+    <script defer="defer" src="./oxygen-webhelp/app/commons.js?buildId=2023063023"></script>
+    <script defer="defer" src="./oxygen-webhelp/app/topic.js?buildId=2023063023"></script>
+<link rel="stylesheet" type="text/css" href="oxygen-webhelp/template/oxygen.css?buildId=2023063023"/><link rel="stylesheet" type="text/css" href="oxygen-webhelp/template/notes.css?buildId=2023063023"/></head>
+
+    <body id="dataset_sdk" class="wh_topic_page frmBody">
+        <a href="#wh_topic_body" class="sr-only sr-only-focusable">
+            Jump to main content
+        </a>
+        
+        
+        
+        
+        <header class="navbar navbar-default wh_header">
+    <div class="container-fluid">
+        <div class="wh_header_flex_container navbar-nav navbar-expand-md navbar-dark">
+            <div class="wh_logo_and_publication_title_container">
+                <div class="wh_logo_and_publication_title">
+                    
+                    
+                    <div class=" wh_publication_title "><a href="index.html"><span class="title">Encord Assignment</span></a></div>
+                    
+                </div>
+                
+                <button type="button" data-target="#wh_top_menu_and_indexterms_link" id="wh_menu_mobile_button" data-toggle="collapse" class="navbar-toggler collapsed wh_toggle_button" aria-expanded="false" aria-label="Toggle menu" aria-controls="wh_top_menu_and_indexterms_link">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+
+            <div class="wh_top_menu_and_indexterms_link collapse navbar-collapse" id="wh_top_menu_and_indexterms_link">
+                
+                <nav class=" wh_top_menu " aria-label="Menu Container"><ul role="menubar" aria-label="Menu"><li role="menuitem"><span id="solution_intro-d215e11-mi" data-tocid="solution_intro-d215e11" data-state="leaf" class=" topicref " data-id="solution_intro"><span class="title"><a href="solution_intro.html">Solution Intro</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="web_app_help-d215e20-mi" data-tocid="web_app_help-d215e20" data-state="not-ready" class=" topicref " data-id="web_app_help"><span class="title"><a href="web_app_help.html">Web-App Help</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="encord_python_sdk-d215e45-mi" data-tocid="encord_python_sdk-d215e45" data-state="not-ready" class=" topicref " data-id="encord_python_sdk"><span class="title"><a href="encord_python_sdk.html">Encord Python SDK</a></span></span></li></ul></nav>
+                
+                
+            </div>
+        </div>
+    </div>
+</header>
+        
+        
+         
+        
+        <div class=" wh_search_input navbar-form wh_topic_page_search search " role="form">
+            
+            
+            
+            <form id="searchForm" method="get" role="search" action="search.html"><div><input type="search" placeholder="Search " class="wh_search_textfield" id="textToSearch" name="searchQuery" aria-label="Search query" required="required"/><button type="submit" class="wh_search_button" aria-label="Search"><span class="search_input_text">Search</span></button></div></form>
+            
+            
+            
+        </div>
+        
+        <div class="container-fluid" id="wh_topic_container">
+            <div class="row">
+
+                <nav class="wh_tools d-print-none navbar-expand-md" aria-label="Tools">
+                    
+                    <div data-tooltip-position="bottom" class=" wh_breadcrumb "><ol class="d-print-none"><li><span class="home"><a href="index.html"><span>Home</span></a></span></li><li><div class="topicref" data-id="encord_python_sdk"><div class="title"><a href="encord_python_sdk.html">Encord Python SDK</a></div></div></li><li><div class="topicref" data-id="sdk_reference"><div class="title"><a href="sdk_reference.html">SDK Reference</a></div></div></li><li class="active"><div class="topicref" data-id="dataset_sdk"><div class="title"><a href="dataset_sdk.html">Dataset (SDK)</a></div></div></li></ol></div>
+                    
+                    
+                    
+                    <div class="wh_right_tools">
+                        <button class="wh_hide_highlight" aria-label="Toggle search highlights" title="Toggle search highlights"></button>
+                        <button class="webhelp_expand_collapse_sections" data-next-state="collapsed" aria-label="Collapse sections" title="Collapse sections"></button>
+                        
+                        
+                        
+                        
+                        <div class=" wh_print_link print d-none d-md-inline-block "><button onClick="window.print()" title="Print this page" aria-label="Print this page"></button></div>
+                        
+                        <button type="button" id="wh_toc_button" class="custom-toggler navbar-toggler collapsed wh_toggle_button navbar-light" aria-expanded="false" aria-label="Toggle publishing table of content" aria-controls="wh_publication_toc">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </div>
+                    
+                </nav>
+            </div>
+            
+            
+            
+            
+            <div class="wh_content_area">
+                <div class="row">
+                    
+                        <nav id="wh_publication_toc" class="col-lg-3 col-md-3 col-sm-12 d-md-block d-none d-print-none" aria-label="Table of Contents Container">
+                            <div id="wh_publication_toc_content">
+		                        
+                            	<div class=" wh_publication_toc " data-tooltip-position="right"><span class="expand-button-action-labels"><span id="button-expand-action" role="button" aria-label="Expand"></span><span id="button-collapse-action" role="button" aria-label="Collapse"></span><span id="button-pending-action" role="button" aria-label="Pending"></span></span><ul role="tree" aria-label="Table of Contents"><li role="treeitem" aria-expanded="true"><div data-tocid="encord_python_sdk-d215e45" class="topicref" data-id="encord_python_sdk" data-state="expanded"><span role="button" tabindex="0" aria-labelledby="button-collapse-action encord_python_sdk-d215e45-link" class="wh-expand-btn"></span><div class="title"><a href="encord_python_sdk.html" id="encord_python_sdk-d215e45-link">Encord Python SDK</a></div></div><ul role="group" class="navbar-nav nav-list"><li role="treeitem"><div data-tocid="about_encord-d215e53" class="topicref" data-id="about_encord" data-state="leaf"><span role="button" class="wh-expand-btn"></span><div class="title"><a href="about_encord_2.html" id="about_encord-d215e53-link">Introduction to Encord</a></div></div></li><li role="treeitem"><div data-tocid="datasets-d215e61" class="topicref" data-id="datasets" data-state="leaf"><span role="button" class="wh-expand-btn"></span><div class="title"><a href="datasets.html" id="datasets-d215e61-link">Datasets</a></div></div></li><li role="treeitem" aria-expanded="true"><div data-tocid="sdk_reference-d215e69" class="topicref" data-id="sdk_reference" data-state="expanded"><span role="button" tabindex="0" aria-labelledby="button-collapse-action sdk_reference-d215e69-link" class="wh-expand-btn"></span><div class="title"><a href="sdk_reference.html" id="sdk_reference-d215e69-link">SDK Reference</a></div></div><ul role="group" class="navbar-nav nav-list"><li role="treeitem" class="active"><div data-tocid="dataset_sdk-d215e77" class="topicref" data-id="dataset_sdk" data-state="leaf"><span role="button" class="wh-expand-btn"></span><div class="title"><a href="dataset_sdk.html" id="dataset_sdk-d215e77-link">Dataset (SDK)</a></div></div></li></ul></li></ul></li></ul></div>
+		                        
+                            </div>
+                        </nav>
+                    
+                    
+                    <div class="col-lg-7 col-md-9 col-sm-12" id="wh_topic_body">
+                        <button id="wh_close_publication_toc_button" class="close-toc-button d-none" aria-label="Toggle publishing table of content" aria-controls="wh_publication_toc" aria-expanded="true">
+                            <span class="close-toc-icon-container">
+                                <span class="close-toc-icon"></span>     
+                            </span>
+                        </button>
+                        <button id="wh_close_topic_toc_button" class="close-toc-button d-none" aria-label="Toggle topic table of content" aria-controls="wh_topic_toc" aria-expanded="true">
+                            <span class="close-toc-icon-container">
+                                <span class="close-toc-icon"></span>     
+                            </span>
+                        </button>
+                        
+                        <div class=" wh_topic_content body "><main role="main"><article class="- topic/topic topic" role="article" aria-labelledby="ariaid-title1">
+    <h1 class="- topic/title title topictitle1" id="ariaid-title1">Dataset (SDK)</h1>
+    <div class="- topic/body body"></div>
+    <article class="- topic/topic topic nested1" aria-labelledby="ariaid-title2" id="topic_awr_pdq_pyb">
+        <h2 class="- topic/title title topictitle2" id="ariaid-title2"><em class="+ topic/ph hi-d/i ph i">class </em>encord.dataset.<strong class="+ topic/ph hi-d/b ph b">Dataset</strong>(<em class="+ topic/ph hi-d/i ph i">client</em>)</h2>
+        <div class="- topic/body body">
+            <p class="- topic/p p">Access dataset related data and manipulate the dataset.</p>
+            <dl class="- topic/dl dl" id="topic_awr_pdq_pyb__dl_kbn_51q_pyb" data-ofbid="topic_awr_pdq_pyb__dl_kbn_51q_pyb">
+                
+                    <dt class="- topic/dt dt dlterm" id="topic_awr_pdq_pyb__encord.dataset.Dataset.dataset_hash" data-ofbid="topic_awr_pdq_pyb__encord.dataset.Dataset.dataset_hash"><em class="+ topic/ph hi-d/i ph i">property
+                            </em><strong class="+ topic/ph hi-d/b ph b">dataset_hash</strong><em class="+ topic/ph hi-d/i ph i">: str</em></dt>
+                    <dd class="- topic/dd dd">
+                        <p class="- topic/p p">Get the dataset hash (for example the Dataset ID).</p>
+                        <dl class="- topic/dl dl" id="topic_awr_pdq_pyb__dl_lbn_51q_pyb" data-ofbid="topic_awr_pdq_pyb__dl_lbn_51q_pyb">
+                            
+                                <dt class="- topic/dt dt dlterm">Return type</dt>
+                                <dd class="- topic/dd dd">
+                                    <p class="- topic/p p"><code class="+ topic/ph pr-d/codeph ph codeph">str</code></p>
+                                </dd>
+                            
+                        </dl>
+                    </dd>
+                
+            </dl>
+            <dl class="- topic/dl dl" id="topic_awr_pdq_pyb__dl_mbn_51q_pyb" data-ofbid="topic_awr_pdq_pyb__dl_mbn_51q_pyb">
+                
+                    <dt class="- topic/dt dt dlterm" id="topic_awr_pdq_pyb__encord.dataset.Dataset.title" data-ofbid="topic_awr_pdq_pyb__encord.dataset.Dataset.title"><em class="+ topic/ph hi-d/i ph i">property </em><strong class="+ topic/ph hi-d/b ph b">title</strong><em class="+ topic/ph hi-d/i ph i">:
+                        str</em></dt>
+                    <dd class="- topic/dd dd">
+                        <dl class="- topic/dl dl" id="topic_awr_pdq_pyb__dl_nbn_51q_pyb" data-ofbid="topic_awr_pdq_pyb__dl_nbn_51q_pyb">
+                            
+                                <dt class="- topic/dt dt dlterm">Return type</dt>
+                                <dd class="- topic/dd dd">
+                                    <p class="- topic/p p"><code class="+ topic/ph pr-d/codeph ph codeph">str</code></p>
+                                </dd>
+                            
+                        </dl>
+                    </dd>
+                
+            </dl>
+            <dl class="- topic/dl dl" id="topic_awr_pdq_pyb__dl_obn_51q_pyb" data-ofbid="topic_awr_pdq_pyb__dl_obn_51q_pyb">
+                
+                    <dt class="- topic/dt dt dlterm" id="topic_awr_pdq_pyb__encord.dataset.Dataset.description" data-ofbid="topic_awr_pdq_pyb__encord.dataset.Dataset.description"><em class="+ topic/ph hi-d/i ph i">property
+                            </em><strong class="+ topic/ph hi-d/b ph b">description</strong><em class="+ topic/ph hi-d/i ph i">: str</em></dt>
+                    <dd class="- topic/dd dd">
+                        <dl class="- topic/dl dl" id="topic_awr_pdq_pyb__dl_pbn_51q_pyb" data-ofbid="topic_awr_pdq_pyb__dl_pbn_51q_pyb">
+                            
+                                <dt class="- topic/dt dt dlterm">Return type</dt>
+                                <dd class="- topic/dd dd">
+                                    <p class="- topic/p p"><code class="+ topic/ph pr-d/codeph ph codeph">str</code></p>
+                                </dd>
+                            
+                        </dl>
+                    </dd>
+                
+            </dl>
+            <dl class="- topic/dl dl" id="topic_awr_pdq_pyb__dl_qbn_51q_pyb" data-ofbid="topic_awr_pdq_pyb__dl_qbn_51q_pyb">
+                
+                    <dt class="- topic/dt dt dlterm" id="topic_awr_pdq_pyb__encord.dataset.Dataset.storage_location" data-ofbid="topic_awr_pdq_pyb__encord.dataset.Dataset.storage_location"><em class="+ topic/ph hi-d/i ph i">property
+                            </em><strong class="+ topic/ph hi-d/b ph b">storage_location</strong><em class="+ topic/ph hi-d/i ph i">: <a class="- topic/xref xref" href="https://python.docs.encord.com/api.html#encord.orm.dataset.StorageLocation" target="_blank" rel="external noopener">encord.orm.dataset.StorageLocation</a></em></dt>
+                    <dd class="- topic/dd dd">
+                        <dl class="- topic/dl dl" id="topic_awr_pdq_pyb__dl_rbn_51q_pyb" data-ofbid="topic_awr_pdq_pyb__dl_rbn_51q_pyb">
+                            
+                                <dt class="- topic/dt dt dlterm">Return type</dt>
+                                <dd class="- topic/dd dd">
+                                    <p class="- topic/p p"><a class="- topic/xref xref" href="https://python.docs.encord.com/api.html#encord.orm.dataset.StorageLocation" target="_blank" rel="external noopener"><code class="+ topic/ph pr-d/codeph ph codeph">StorageLocation</code></a></p>
+                                </dd>
+                            
+                        </dl>
+                    </dd>
+                
+            </dl>
+            <pre class="+ topic/pre pr-d/codeblock pre codeblock" id="topic_awr_pdq_pyb__codeblock_pn1_4bq_pyb" data-ofbid="topic_awr_pdq_pyb__codeblock_pn1_4bq_pyb"><code>class Dataset:
+    """
+    Access dataset related data and manipulate the dataset.
+    """
+
+    def __init__(self, client: EncordClientDataset):
+        self._client = client
+        self._dataset_instance: Optional[OrmDataset] = None
+
+    @property
+    def dataset_hash(self) -&gt; str:
+        """
+        Get the dataset hash (i.e. the Dataset ID).
+        """
+        dataset_instance = self._get_dataset_instance()
+        return dataset_instance.dataset_hash
+
+    @property
+    def title(self) -&gt; str:
+        dataset_instance = self._get_dataset_instance()
+        return dataset_instance.title
+
+    @property
+    def description(self) -&gt; str:
+        dataset_instance = self._get_dataset_instance()
+        return dataset_instance.description
+
+    @property
+    def storage_location(self) -&gt; StorageLocation:
+        dataset_instance = self._get_dataset_instance()
+        return dataset_instance.storage_location
+
+    @property
+    def data_rows(self) -&gt; List[DataRow]:
+        """
+        Part of the response of this function can be configured by the
+        :meth:`encord.dataset.Dataset.set_access_settings` method.
+
+        .. code::
+
+            dataset.set_access_settings(DatasetAccessSettings(fetch_client_metadata=True))
+            print(dataset.data_rows)
+        """
+        dataset_instance = self._get_dataset_instance()
+        return dataset_instance.data_rows</code></pre>
+        </div>
+    </article>
+    <article class="- topic/topic topic nested1" aria-labelledby="ariaid-title3" id="topic_hrh_mhq_pyb">
+        <h2 class="- topic/title title topictitle2" id="ariaid-title3"><em class="+ topic/ph hi-d/i ph i">property </em><strong class="+ topic/ph hi-d/b ph b">data_rows</strong></h2>
+        <div class="- topic/body body">
+            <dl class="- topic/dl dl" id="topic_hrh_mhq_pyb__dl_sbn_51q_pyb" data-ofbid="topic_hrh_mhq_pyb__dl_sbn_51q_pyb">
+                
+                    <dt class="- topic/dt dt dlterm" id="topic_hrh_mhq_pyb__encord.dataset.Dataset.data_rows" data-ofbid="topic_hrh_mhq_pyb__encord.dataset.Dataset.data_rows"><em class="+ topic/ph hi-d/i ph i">property </em><strong class="+ topic/ph hi-d/b ph b">data_rows</strong><em class="+ topic/ph hi-d/i ph i">:
+                                List[<a class="- topic/xref xref" href="https://python.docs.encord.com/api.html#encord.orm.dataset.DataRow" target="_blank" rel="external noopener">encord.orm.dataset.DataRow</a>]</em></dt>
+                    <dd class="- topic/dd dd">
+                        <p class="- topic/p p">Part of the response of this function can be configured by the <a class="- topic/xref xref" href="https://python.docs.encord.com/api.html#encord.dataset.Dataset.set_access_settings" target="_blank" rel="external noopener"><code class="+ topic/ph pr-d/codeph ph codeph">encord.dataset.Dataset.set_access_settings()</code></a>
+                            method.</p>
+                        <pre class="- topic/pre pre" id="topic_hrh_mhq_pyb__codecell7" data-ofbid="topic_hrh_mhq_pyb__codecell7">dataset<strong class="+ topic/ph hi-d/b ph b">.</strong>set_access_settings<strong class="+ topic/ph hi-d/b ph b">(</strong>DatasetAccessSettings<strong class="+ topic/ph hi-d/b ph b">(</strong>fetch_client_metadata<strong class="+ topic/ph hi-d/b ph b">=</strong><strong class="+ topic/ph hi-d/b ph b">True</strong><strong class="+ topic/ph hi-d/b ph b">))</strong>print<strong class="+ topic/ph hi-d/b ph b">(</strong>dataset<strong class="+ topic/ph hi-d/b ph b">.</strong>data_rows<strong class="+ topic/ph hi-d/b ph b">)</strong></pre>
+                        <dl class="- topic/dl dl" id="topic_hrh_mhq_pyb__dl_tbn_51q_pyb" data-ofbid="topic_hrh_mhq_pyb__dl_tbn_51q_pyb">
+                            
+                                <dt class="- topic/dt dt dlterm">Return type</dt>
+                                <dd class="- topic/dd dd">
+                                    <p class="- topic/p p"><code class="+ topic/ph pr-d/codeph ph codeph">List</code>[<a class="- topic/xref xref" href="https://python.docs.encord.com/api.html#encord.orm.dataset.DataRow" target="_blank" rel="external noopener"><code class="+ topic/ph pr-d/codeph ph codeph">DataRow</code></a>]</p>
+                                </dd>
+                            
+                        </dl>
+                    </dd>
+                
+            </dl>
+            <dl class="- topic/dl dl" id="topic_hrh_mhq_pyb__dl_ubn_51q_pyb" data-ofbid="topic_hrh_mhq_pyb__dl_ubn_51q_pyb">
+                
+                    <dt class="- topic/dt dt dlterm" id="topic_hrh_mhq_pyb__encord.dataset.Dataset.list_data_rows" data-ofbid="topic_hrh_mhq_pyb__encord.dataset.Dataset.list_data_rows"><strong class="+ topic/ph hi-d/b ph b">list_data_rows</strong>(<em class="+ topic/ph hi-d/i ph i">title_eq=None</em>, <em class="+ topic/ph hi-d/i ph i">title_like=None</em>,
+                            <em class="+ topic/ph hi-d/i ph i">created_before=None</em>, <em class="+ topic/ph hi-d/i ph i">created_after=None</em>,
+                            <em class="+ topic/ph hi-d/i ph i">data_types=None</em>)</dt>
+                    <dd class="- topic/dd dd">
+                        <p class="- topic/p p">Retrieve dataset rows (pointers to data, labels).</p>
+                        <dl class="- topic/dl dl" id="topic_hrh_mhq_pyb__dl_vbn_51q_pyb" data-ofbid="topic_hrh_mhq_pyb__dl_vbn_51q_pyb">
+                            
+                                <dt class="- topic/dt dt dlterm">Parameters</dt>
+                                <dd class="- topic/dd dd">
+                                    <ul class="- topic/ul ul" id="topic_hrh_mhq_pyb__ul_wbn_51q_pyb" data-ofbid="topic_hrh_mhq_pyb__ul_wbn_51q_pyb">
+                                        <li class="- topic/li li">
+                                            <p class="- topic/p p"><strong class="+ topic/ph hi-d/b ph b">title_eq</strong>
+                                                  (<code class="+ topic/ph pr-d/codeph ph codeph">Optional</code>[<code class="+ topic/ph pr-d/codeph ph codeph">str</code>])
+                                                – optional exact title row filter</p>
+                                        </li>
+                                        <li class="- topic/li li">
+                                            <p class="- topic/p p"><strong class="+ topic/ph hi-d/b ph b">title_like</strong>
+                                                  (<code class="+ topic/ph pr-d/codeph ph codeph">Optional</code>[<code class="+ topic/ph pr-d/codeph ph codeph">str</code>])
+                                                – optional fuzzy title row filter; SQL syntax</p>
+                                        </li>
+                                        <li class="- topic/li li">
+                                            <p class="- topic/p p"><strong class="+ topic/ph hi-d/b ph b">created_before</strong>
+                                                  (<code class="+ topic/ph pr-d/codeph ph codeph">Union</code>[<code class="+ topic/ph pr-d/codeph ph codeph">str</code>,
+                                                  <code class="+ topic/ph pr-d/codeph ph codeph">datetime</code>, <code class="+ topic/ph pr-d/codeph ph codeph">None</code>])
+                                                – optional datetime row filter</p>
+                                        </li>
+                                        <li class="- topic/li li">
+                                            <p class="- topic/p p"><strong class="+ topic/ph hi-d/b ph b">created_after</strong>
+                                                  (<code class="+ topic/ph pr-d/codeph ph codeph">Union</code>[<code class="+ topic/ph pr-d/codeph ph codeph">str</code>,
+                                                  <code class="+ topic/ph pr-d/codeph ph codeph">datetime</code>, <code class="+ topic/ph pr-d/codeph ph codeph">None</code>])
+                                                – optional datetime row filter</p>
+                                        </li>
+                                        <li class="- topic/li li">
+                                            <p class="- topic/p p"><strong class="+ topic/ph hi-d/b ph b">data_types</strong>
+                                                  (<code class="+ topic/ph pr-d/codeph ph codeph">Optional</code>[<code class="+ topic/ph pr-d/codeph ph codeph">List</code>[<a class="- topic/xref xref" href="https://python.docs.encord.com/api.html#encord.constants.enums.DataType" target="_blank" rel="external noopener"><code class="+ topic/ph pr-d/codeph ph codeph">DataType</code></a>]]) – optional
+                                                data types row filter</p>
+                                        </li>
+                                    </ul>
+                                </dd>
+                            
+                            
+                                <dt class="- topic/dt dt dlterm">Returns</dt>
+                                <dd class="- topic/dd dd">
+                                    <p class="- topic/p p">A list of DataRows object that match the filter</p>
+                                </dd>
+                            
+                            
+                                <dt class="- topic/dt dt dlterm">Return type</dt>
+                                <dd class="- topic/dd dd">
+                                    <p class="- topic/p p">List[<a class="- topic/xref xref" href="https://python.docs.encord.com/api.html#encord.orm.dataset.DataRow" target="_blank" rel="external noopener">DataRow</a>]</p>
+                                </dd>
+                            
+                            
+                                <dt class="- topic/dt dt dlterm">Raises</dt>
+                                <dd class="- topic/dd dd">
+                                    <ul class="- topic/ul ul" id="topic_hrh_mhq_pyb__ul_xbn_51q_pyb" data-ofbid="topic_hrh_mhq_pyb__ul_xbn_51q_pyb">
+                                        <li class="- topic/li li">
+                                            <p class="- topic/p p"><a class="- topic/xref xref" href="https://python.docs.encord.com/api.html#encord.exceptions.AuthorisationError" target="_blank" rel="external noopener"><strong class="+ topic/ph hi-d/b ph b">AuthorisationError</strong></a> – If the dataset
+                                                API key is invalid.</p>
+                                        </li>
+                                        <li class="- topic/li li">
+                                            <p class="- topic/p p"><a class="- topic/xref xref" href="https://python.docs.encord.com/api.html#encord.exceptions.ResourceNotFoundError" target="_blank" rel="external noopener"><strong class="+ topic/ph hi-d/b ph b">ResourceNotFoundError</strong></a> – If no
+                                                dataset exists by the specified dataset
+                                                EntityId.</p>
+                                        </li>
+                                        <li class="- topic/li li">
+                                            <p class="- topic/p p"><strong class="+ topic/ph hi-d/b ph b">UnknownError</strong> – If an error occurs while
+                                                retrieving the dataset.</p>
+                                        </li>
+                                    </ul>
+                                </dd>
+                            
+                        </dl>
+                    </dd>
+                
+            </dl>
+            <pre class="+ topic/pre pr-d/codeblock pre codeblock" id="topic_hrh_mhq_pyb__codeblock_dtz_rbq_pyb" data-ofbid="topic_hrh_mhq_pyb__codeblock_dtz_rbq_pyb"><code>    def list_data_rows(
+        self,
+        title_eq: Optional[str] = None,
+        title_like: Optional[str] = None,
+        created_before: Optional[Union[str, datetime]] = None,
+        created_after: Optional[Union[str, datetime]] = None,
+        data_types: Optional[List[DataType]] = None,
+    ) -&gt; List[DataRow]:
+        """
+        Retrieve dataset rows (pointers to data, labels).
+
+        Args:
+            title_eq: optional exact title row filter
+            title_like: optional fuzzy title row filter; SQL syntax
+            created_before: optional datetime row filter
+            created_after: optional datetime row filter
+            data_types: optional data types row filter
+
+        Returns:
+            List[DataRow]: A list of DataRows object that match the filter
+
+        Raises:
+            AuthorisationError: If the dataset API key is invalid.
+            ResourceNotFoundError: If no dataset exists by the specified dataset EntityId.
+            UnknownError: If an error occurs while retrieving the dataset.
+        """
+
+        return self._client.list_data_rows(title_eq, title_like, created_before, created_after, data_types)</code></pre>
+        </div>
+    </article>
+    <article class="- topic/topic topic nested1" aria-labelledby="ariaid-title4" id="topic_fls_phq_pyb">
+        <h2 class="- topic/title title topictitle2" id="ariaid-title4"><strong class="+ topic/ph hi-d/b ph b">refetch_data</strong>()</h2>
+        <div class="- topic/body body">
+            <dl class="- topic/dl dl" id="topic_fls_phq_pyb__dl_ybn_51q_pyb" data-ofbid="topic_fls_phq_pyb__dl_ybn_51q_pyb">
+                
+                    <dt class="- topic/dt dt dlterm" id="topic_fls_phq_pyb__encord.dataset.Dataset.refetch_data" data-ofbid="topic_fls_phq_pyb__encord.dataset.Dataset.refetch_data"></dt>
+                    <dd class="- topic/dd dd">
+                        <p class="- topic/p p">The Dataset class will only fetch its properties once. Use this function
+                            if you suspect the state of those properties to be dirty.</p>
+                        <dl class="- topic/dl dl" id="topic_fls_phq_pyb__dl_zbn_51q_pyb" data-ofbid="topic_fls_phq_pyb__dl_zbn_51q_pyb">
+                            
+                                <dt class="- topic/dt dt dlterm">Return type</dt>
+                                <dd class="- topic/dd dd">
+                                    <p class="- topic/p p"><code class="+ topic/ph pr-d/codeph ph codeph">None</code></p>
+                                </dd>
+                            
+                        </dl>
+                    </dd>
+                
+            </dl>
+            <pre class="+ topic/pre pr-d/codeblock pre codeblock" id="topic_fls_phq_pyb__codeblock_n24_5bq_pyb" data-ofbid="topic_fls_phq_pyb__codeblock_n24_5bq_pyb"><code>    def refetch_data(self) -&gt; None:
+        """
+        The Dataset class will only fetch its properties once. Use this function if you suspect the state of those
+        properties to be dirty.
+        """
+        self._dataset_instance = self.get_dataset()</code></pre>
+        </div>
+    </article>
+    <article class="- topic/topic topic nested1" aria-labelledby="ariaid-title5" id="topic_vxs_rhq_pyb">
+        <h2 class="- topic/title title topictitle2" id="ariaid-title5"><strong class="+ topic/ph hi-d/b ph b">get_dataset</strong>()</h2>
+        <div class="- topic/body body">
+            <p class="- topic/p p">This function is exposed for convenience. You are encouraged to use the property
+                accessors instead.</p>
+            <dl class="- topic/dl dl" id="topic_vxs_rhq_pyb__dl_acn_51q_pyb" data-ofbid="topic_vxs_rhq_pyb__dl_acn_51q_pyb">
+                
+                    <dt class="- topic/dt dt dlterm" id="topic_vxs_rhq_pyb__encord.dataset.Dataset.get_dataset" data-ofbid="topic_vxs_rhq_pyb__encord.dataset.Dataset.get_dataset"></dt>
+                    <dd class="- topic/dd dd">
+                        <dl class="- topic/dl dl" id="topic_vxs_rhq_pyb__dl_bcn_51q_pyb" data-ofbid="topic_vxs_rhq_pyb__dl_bcn_51q_pyb">
+                            
+                                <dt class="- topic/dt dt dlterm">Return type</dt>
+                                <dd class="- topic/dd dd">
+                                    <p class="- topic/p p"><a class="- topic/xref xref" href="https://python.docs.encord.com/api.html#encord.orm.dataset.Dataset" target="_blank" rel="external noopener"><code class="+ topic/ph pr-d/codeph ph codeph">Dataset</code></a></p>
+                                </dd>
+                            
+                        </dl>
+                    </dd>
+                
+            </dl>
+            <pre class="+ topic/pre pr-d/codeblock pre codeblock" id="topic_vxs_rhq_pyb__codeblock_zqb_bcq_pyb" data-ofbid="topic_vxs_rhq_pyb__codeblock_zqb_bcq_pyb"><code>    def get_dataset(self) -&gt; OrmDataset:
+        """
+        This function is exposed for convenience. You are encouraged to use the property accessors instead.
+        """
+        return self._client.get_dataset()</code></pre>
+        </div>
+    </article>
+    <article class="- topic/topic topic nested1" aria-labelledby="ariaid-title6" id="topic_ywl_5hq_pyb">
+        <h2 class="- topic/title title topictitle2" id="ariaid-title6"><strong class="+ topic/ph hi-d/b ph b">set_access_settings</strong></h2>
+        <div class="- topic/body body">
+            <dl class="- topic/dl dl" id="topic_ywl_5hq_pyb__dl_ccn_51q_pyb" data-ofbid="topic_ywl_5hq_pyb__dl_ccn_51q_pyb">
+                
+                    <dt class="- topic/dt dt dlterm" id="topic_ywl_5hq_pyb__encord.dataset.Dataset.set_access_settings" data-ofbid="topic_ywl_5hq_pyb__encord.dataset.Dataset.set_access_settings"><strong class="+ topic/ph hi-d/b ph b">set_access_settings</strong>(<em class="+ topic/ph hi-d/i ph i">dataset_access_settings</em>, <em class="+ topic/ph hi-d/i ph i">*</em>,
+                            <em class="+ topic/ph hi-d/i ph i">refetch_data=True</em>)</dt>
+                    <dd class="- topic/dd dd">
+                        <dl class="- topic/dl dl" id="topic_ywl_5hq_pyb__dl_dcn_51q_pyb" data-ofbid="topic_ywl_5hq_pyb__dl_dcn_51q_pyb">
+                            
+                                <dt class="- topic/dt dt dlterm">Parameters</dt>
+                                <dd class="- topic/dd dd">
+                                    <ul class="- topic/ul ul" id="topic_ywl_5hq_pyb__ul_ecn_51q_pyb" data-ofbid="topic_ywl_5hq_pyb__ul_ecn_51q_pyb">
+                                        <li class="- topic/li li">
+                                            <p class="- topic/p p"><strong class="+ topic/ph hi-d/b ph b">dataset_access_settings</strong> (<a class="- topic/xref xref" href="https://python.docs.encord.com/api.html#encord.orm.dataset.DatasetAccessSettings" target="_blank" rel="external noopener"><code class="+ topic/ph pr-d/codeph ph codeph">DatasetAccessSettings</code></a>) –
+                                                The access settings to use going forward</p>
+                                        </li>
+                                        <li class="- topic/li li">
+                                            <p class="- topic/p p"><strong class="+ topic/ph hi-d/b ph b">refetch_data</strong> (<code class="+ topic/ph pr-d/codeph ph codeph">bool</code>) – Whether
+                                                a <em class="+ topic/ph hi-d/i ph i">refetch_data()</em> call should follow the
+                                                update of the dataset access settings.</p>
+                                        </li>
+                                    </ul>
+                                </dd>
+                            
+                            
+                                <dt class="- topic/dt dt dlterm">Return type</dt>
+                                <dd class="- topic/dd dd">
+                                    <p class="- topic/p p"><code class="+ topic/ph pr-d/codeph ph codeph">None</code></p>
+                                </dd>
+                            
+                        </dl>
+                    </dd>
+                
+            </dl>
+            <pre class="+ topic/pre pr-d/codeblock pre codeblock" id="topic_ywl_5hq_pyb__codeblock_pxl_zbq_pyb" data-ofbid="topic_ywl_5hq_pyb__codeblock_pxl_zbq_pyb"><code>    def set_access_settings(self, dataset_access_settings: DatasetAccessSettings, *, refetch_data: bool = True) -&gt; None:
+        """
+        Args:
+            dataset_access_settings: The access settings to use going forward
+            refetch_data: Whether a `refetch_data()` call should follow the update of the dataset access settings.
+        """
+        self._client.set_access_settings(dataset_access_settings)
+        if refetch_data:
+            self.refetch_data()</code></pre>
+        </div>
+    </article>
+    <article class="- topic/topic topic nested1" aria-labelledby="ariaid-title7" id="topic_k12_whq_pyb">
+        <h2 class="- topic/title title topictitle2" id="ariaid-title7"><strong class="+ topic/ph hi-d/b ph b">add_users</strong></h2>
+        <div class="- topic/body body">
+            <dl class="- topic/dl dl" id="topic_k12_whq_pyb__dl_fcn_51q_pyb" data-ofbid="topic_k12_whq_pyb__dl_fcn_51q_pyb">
+                
+                    <dt class="- topic/dt dt dlterm" id="topic_k12_whq_pyb__encord.dataset.Dataset.add_users" data-ofbid="topic_k12_whq_pyb__encord.dataset.Dataset.add_users"><strong class="+ topic/ph hi-d/b ph b">add_users</strong>(<em class="+ topic/ph hi-d/i ph i">user_emails</em>,
+                            <em class="+ topic/ph hi-d/i ph i">user_role</em>)</dt>
+                    <dd class="- topic/dd dd">
+                        <p class="- topic/p p">Add users to dataset. If the user was already added, this operation will
+                            succeed but the <em class="+ topic/ph hi-d/i ph i">user_role</em> will be unchanged. The existing
+                                <em class="+ topic/ph hi-d/i ph i">user_role</em> will be reflected in the <em class="+ topic/ph hi-d/i ph i">DatasetUser</em>
+                            instance.</p>
+                        <dl class="- topic/dl dl" id="topic_k12_whq_pyb__dl_gcn_51q_pyb" data-ofbid="topic_k12_whq_pyb__dl_gcn_51q_pyb">
+                            
+                                <dt class="- topic/dt dt dlterm">Parameters</dt>
+                                <dd class="- topic/dd dd">
+                                    <ul class="- topic/ul ul" id="topic_k12_whq_pyb__ul_hcn_51q_pyb" data-ofbid="topic_k12_whq_pyb__ul_hcn_51q_pyb">
+                                        <li class="- topic/li li">
+                                            <p class="- topic/p p"><strong class="+ topic/ph hi-d/b ph b">user_emails</strong>
+                                                  (<code class="+ topic/ph pr-d/codeph ph codeph">List</code>[<code class="+ topic/ph pr-d/codeph ph codeph">str</code>]) –
+                                                list of user emails to be added</p>
+                                        </li>
+                                        <li class="- topic/li li">
+                                            <p class="- topic/p p"><strong class="+ topic/ph hi-d/b ph b">user_role</strong> (<a class="- topic/xref xref" href="https://python.docs.encord.com/api.html#encord.orm.dataset.DatasetUserRole" target="_blank" rel="external noopener"><code class="+ topic/ph pr-d/codeph ph codeph">DatasetUserRole</code></a>) – the
+                                                user role to assign to all users</p>
+                                        </li>
+                                    </ul>
+                                </dd>
+                            
+                            
+                                <dt class="- topic/dt dt dlterm">Return type</dt>
+                                <dd class="- topic/dd dd">
+                                    <p class="- topic/p p"><code class="+ topic/ph pr-d/codeph ph codeph">List</code>[<a class="- topic/xref xref" href="https://python.docs.encord.com/api.html#encord.orm.dataset.DatasetUser" target="_blank" rel="external noopener"><code class="+ topic/ph pr-d/codeph ph codeph">DatasetUser</code></a>]</p>
+                                </dd>
+                            
+                        </dl>
+                    </dd>
+                
+            </dl>
+            <pre class="+ topic/pre pr-d/codeblock pre codeblock" id="topic_k12_whq_pyb__codeblock_f2x_ccq_pyb" data-ofbid="topic_k12_whq_pyb__codeblock_f2x_ccq_pyb"><code>    def add_users(self, user_emails: List[str], user_role: DatasetUserRole) -&gt; List[DatasetUser]:
+        """
+        Add users to dataset. If the user was already added, this operation will succeed but the `user_role` will be
+        unchanged. The existing `user_role` will be reflected in the `DatasetUser` instance.
+
+        Args:
+            user_emails: list of user emails to be added
+            user_role: the user role to assign to all users
+        """
+        return self._client.add_users(user_emails, user_role)</code></pre>
+        </div>
+    </article>
+    <article class="- topic/topic topic nested1" aria-labelledby="ariaid-title8" id="topic_glz_xhq_pyb">
+        <h2 class="- topic/title title topictitle2" id="ariaid-title8"><strong class="+ topic/ph hi-d/b ph b">upload_video</strong></h2>
+        <div class="- topic/body body">
+            <dl class="- topic/dl dl" id="topic_glz_xhq_pyb__dl_icn_51q_pyb" data-ofbid="topic_glz_xhq_pyb__dl_icn_51q_pyb">
+                
+                    <dt class="- topic/dt dt dlterm" id="topic_glz_xhq_pyb__encord.dataset.Dataset.upload_video" data-ofbid="topic_glz_xhq_pyb__encord.dataset.Dataset.upload_video"><strong class="+ topic/ph hi-d/b ph b">upload_video</strong>(<em class="+ topic/ph hi-d/i ph i">file_path</em>,
+                            <em class="+ topic/ph hi-d/i ph i">cloud_upload_settings=CloudUploadSettings(max_retries=None,
+                            backoff_factor=None, allow_failures=False)</em>, <em class="+ topic/ph hi-d/i ph i">title=None</em>)</dt>
+                    <dd class="- topic/dd dd">
+                        <p class="- topic/p p">Upload video to Encord storage.</p>
+                        <dl class="- topic/dl dl" id="topic_glz_xhq_pyb__dl_jcn_51q_pyb" data-ofbid="topic_glz_xhq_pyb__dl_jcn_51q_pyb">
+                            
+                                <dt class="- topic/dt dt dlterm">Parameters</dt>
+                                <dd class="- topic/dd dd">
+                                    <ul class="- topic/ul ul" id="topic_glz_xhq_pyb__ul_kcn_51q_pyb" data-ofbid="topic_glz_xhq_pyb__ul_kcn_51q_pyb">
+                                        <li class="- topic/li li">
+                                            <p class="- topic/p p"><strong class="+ topic/ph hi-d/b ph b">file_path</strong> (<code class="+ topic/ph pr-d/codeph ph codeph">str</code>) – path to
+                                                video e.g. ‘/home/user/data/video.mp4’</p>
+                                        </li>
+                                        <li class="- topic/li li">
+                                            <p class="- topic/p p"><strong class="+ topic/ph hi-d/b ph b">cloud_upload_settings</strong> (<a class="- topic/xref xref" href="https://python.docs.encord.com/api.html#encord.http.utils.CloudUploadSettings" target="_blank" rel="external noopener"><code class="+ topic/ph pr-d/codeph ph codeph">CloudUploadSettings</code></a>) –
+                                                Settings for uploading data into the cloud. Change
+                                                this object to overwrite the default values.</p>
+                                        </li>
+                                        <li class="- topic/li li">
+                                            <p class="- topic/p p"><strong class="+ topic/ph hi-d/b ph b">title</strong>
+                                                  (<code class="+ topic/ph pr-d/codeph ph codeph">Optional</code>[<code class="+ topic/ph pr-d/codeph ph codeph">str</code>])
+                                                – The video title. If unspecified, this will be the
+                                                file name. This title should include an extension.
+                                                For example “encord_video.mp4”.</p>
+                                        </li>
+                                    </ul>
+                                </dd>
+                            
+                            
+                                <dt class="- topic/dt dt dlterm">Returns</dt>
+                                <dd class="- topic/dd dd">
+                                    <p class="- topic/p p">Bool.</p>
+                                </dd>
+                            
+                            
+                                <dt class="- topic/dt dt dlterm">Raises</dt>
+                                <dd class="- topic/dd dd">
+                                    <p class="- topic/p p"><a class="- topic/xref xref" href="https://python.docs.encord.com/api.html#encord.exceptions.UploadOperationNotSupportedError" target="_blank" rel="external noopener"><strong class="+ topic/ph hi-d/b ph b">UploadOperationNotSupportedError</strong></a> – If
+                                        trying to upload to external datasets (e.g.
+                                        S3/GPC/Azure)</p>
+                                </dd>
+                            
+                        </dl>
+                    </dd>
+                
+            </dl>
+            <pre class="+ topic/pre pr-d/codeblock pre codeblock" id="topic_glz_xhq_pyb__codeblock_edy_2cq_pyb" data-ofbid="topic_glz_xhq_pyb__codeblock_edy_2cq_pyb"><code>    def upload_video(
+        self,
+        file_path: str,
+        cloud_upload_settings: CloudUploadSettings = CloudUploadSettings(),
+        title: Optional[str] = None,
+    ):
+        """
+        Upload video to Encord storage.
+
+        Args:
+            file_path: path to video e.g. '/home/user/data/video.mp4'
+            cloud_upload_settings:
+                Settings for uploading data into the cloud. Change this object to overwrite the default values.
+            title:
+                The video title. If unspecified, this will be the file name. This title should include an extension.
+                For example "encord_video.mp4".
+
+        Returns:
+            Bool.
+
+        Raises:
+            UploadOperationNotSupportedError: If trying to upload to external
+                                              datasets (e.g. S3/GPC/Azure)
+        """
+        return self._client.upload_video(file_path, cloud_upload_settings=cloud_upload_settings, title=title)
+
+</code></pre>
+        </div>
+    </article>
+    <article class="- topic/topic topic nested1" aria-labelledby="ariaid-title9" id="topic_jd4_zhq_pyb">
+        <h2 class="- topic/title title topictitle2" id="ariaid-title9"><strong class="+ topic/ph hi-d/b ph b">create_image_group</strong></h2>
+        <div class="- topic/body body">
+            <dl class="- topic/dl dl" id="topic_jd4_zhq_pyb__dl_lcn_51q_pyb" data-ofbid="topic_jd4_zhq_pyb__dl_lcn_51q_pyb">
+                
+                    <dt class="- topic/dt dt dlterm" id="topic_jd4_zhq_pyb__encord.dataset.Dataset.create_image_group" data-ofbid="topic_jd4_zhq_pyb__encord.dataset.Dataset.create_image_group"><strong class="+ topic/ph hi-d/b ph b">create_image_group</strong>(<em class="+ topic/ph hi-d/i ph i">file_paths</em>, <em class="+ topic/ph hi-d/i ph i">max_workers=None</em>,
+                            <em class="+ topic/ph hi-d/i ph i">cloud_upload_settings=CloudUploadSettings(max_retries=None,
+                            backoff_factor=None, allow_failures=False)</em>, <em class="+ topic/ph hi-d/i ph i">title=None</em>,
+                            <em class="+ topic/ph hi-d/i ph i">*</em>, <em class="+ topic/ph hi-d/i ph i">create_video=True</em>)</dt>
+                    <dd class="- topic/dd dd">
+                        <p class="- topic/p p">Create an image group in Encord storage. Choose this type of image upload
+                            for sequential images. Else, you can choose the <a class="- topic/xref xref" href="https://python.docs.encord.com/api.html#encord.dataset.Dataset.upload_image" target="_blank" rel="external noopener"><code class="+ topic/ph pr-d/codeph ph codeph">Dataset.upload_image()</code></a> function.</p>
+                        <dl class="- topic/dl dl" id="topic_jd4_zhq_pyb__dl_mcn_51q_pyb" data-ofbid="topic_jd4_zhq_pyb__dl_mcn_51q_pyb">
+                            
+                                <dt class="- topic/dt dt dlterm">Parameters</dt>
+                                <dd class="- topic/dd dd">
+                                    <ul class="- topic/ul ul" id="topic_jd4_zhq_pyb__ul_ncn_51q_pyb" data-ofbid="topic_jd4_zhq_pyb__ul_ncn_51q_pyb">
+                                        <li class="- topic/li li">
+                                            <p class="- topic/p p"><strong class="+ topic/ph hi-d/b ph b">file_paths</strong>
+                                                  (<code class="+ topic/ph pr-d/codeph ph codeph">Iterable</code>[<code class="+ topic/ph pr-d/codeph ph codeph">str</code>])
+                                                – a list of paths to images, e.g.
+                                                [‘/home/user/data/img1.png’,
+                                                ‘/home/user/data/img2.png’]</p>
+                                        </li>
+                                        <li class="- topic/li li">
+                                            <p class="- topic/p p"><strong class="+ topic/ph hi-d/b ph b">max_workers</strong>
+                                                  (<code class="+ topic/ph pr-d/codeph ph codeph">Optional</code>[<code class="+ topic/ph pr-d/codeph ph codeph">int</code>])
+                                                – DEPRECATED: This argument will be ignored</p>
+                                        </li>
+                                        <li class="- topic/li li">
+                                            <p class="- topic/p p"><strong class="+ topic/ph hi-d/b ph b">cloud_upload_settings</strong> (<a class="- topic/xref xref" href="https://python.docs.encord.com/api.html#encord.http.utils.CloudUploadSettings" target="_blank" rel="external noopener"><code class="+ topic/ph pr-d/codeph ph codeph">CloudUploadSettings</code></a>) –
+                                                Settings for uploading data into the cloud. Change
+                                                this object to overwrite the default values.</p>
+                                        </li>
+                                        <li class="- topic/li li">
+                                            <p class="- topic/p p"><strong class="+ topic/ph hi-d/b ph b">title</strong>
+                                                  (<code class="+ topic/ph pr-d/codeph ph codeph">Optional</code>[<code class="+ topic/ph pr-d/codeph ph codeph">str</code>])
+                                                – The title of the image group. If unspecified this
+                                                will be randomly generated for you. This title
+                                                should NOT include an extension. For example
+                                                “encord_image_group”.</p>
+                                        </li>
+                                        <li class="- topic/li li">
+                                            <p class="- topic/p p"><strong class="+ topic/ph hi-d/b ph b">create_video</strong> (<code class="+ topic/ph pr-d/codeph ph codeph">bool</code>) – A flag
+                                                specifying how image groups are stored. If
+                                                  <em class="+ topic/ph hi-d/i ph i">True</em>, a compressed video will be created
+                                                from the image groups. <em class="+ topic/ph hi-d/i ph i">True</em> was the previous
+                                                default support. If <em class="+ topic/ph hi-d/i ph i">False</em>, the images are
+                                                saved as a sequence of images.</p>
+                                        </li>
+                                    </ul>
+                                </dd>
+                            
+                            
+                                <dt class="- topic/dt dt dlterm">Returns</dt>
+                                <dd class="- topic/dd dd">
+                                    <p class="- topic/p p">Bool.</p>
+                                </dd>
+                            
+                            
+                                <dt class="- topic/dt dt dlterm">Raises</dt>
+                                <dd class="- topic/dd dd">
+                                    <p class="- topic/p p"><a class="- topic/xref xref" href="https://python.docs.encord.com/api.html#encord.exceptions.UploadOperationNotSupportedError" target="_blank" rel="external noopener"><strong class="+ topic/ph hi-d/b ph b">UploadOperationNotSupportedError</strong></a> – If
+                                        trying to upload to external datasets (e.g.
+                                        S3/GPC/Azure)</p>
+                                </dd>
+                            
+                        </dl>
+                    </dd>
+                
+            </dl>
+            <pre class="+ topic/pre pr-d/codeblock pre codeblock" id="topic_jd4_zhq_pyb__codeblock_fs3_gcq_pyb" data-ofbid="topic_jd4_zhq_pyb__codeblock_fs3_gcq_pyb"><code>    def create_image_group(
+        self,
+        file_paths: Iterable[str],
+        max_workers: Optional[int] = None,
+        cloud_upload_settings: CloudUploadSettings = CloudUploadSettings(),
+        title: Optional[str] = None,
+        *,
+        create_video: bool = True,
+    ):
+        """
+        Create an image group in Encord storage. Choose this type of image upload for sequential images. Else, you can
+        choose the :meth:`.Dataset.upload_image` function.
+
+        Args:
+            file_paths: a list of paths to images, e.g.
+                ['/home/user/data/img1.png', '/home/user/data/img2.png']
+            max_workers:
+                DEPRECATED: This argument will be ignored
+            cloud_upload_settings:
+                Settings for uploading data into the cloud. Change this object to overwrite the default values.
+            title:
+                The title of the image group. If unspecified this will be randomly generated for you. This title should
+                NOT include an extension. For example "encord_image_group".
+            create_video:
+                A flag specifying how image groups are stored. If `True`, a compressed video will be created from
+                the image groups. `True` was the previous default support. If `False`, the images
+                are saved as a sequence of images.
+
+        Returns:
+            Bool.
+
+        Raises:
+            UploadOperationNotSupportedError: If trying to upload to external
+                                              datasets (e.g. S3/GPC/Azure)
+        """
+        return self._client.create_image_group(
+            file_paths,
+            cloud_upload_settings=cloud_upload_settings,
+            title=title,
+            create_video=create_video,
+        )
+</code></pre>
+        </div>
+    </article>
+    <article class="- topic/topic topic nested1" aria-labelledby="ariaid-title10" id="topic_yxx_b3q_pyb">
+        <h2 class="- topic/title title topictitle2" id="ariaid-title10"><strong class="+ topic/ph hi-d/b ph b">create_dicom_series</strong></h2>
+        <div class="- topic/body body">
+            <dl class="- topic/dl dl" id="topic_yxx_b3q_pyb__dl_ocn_51q_pyb" data-ofbid="topic_yxx_b3q_pyb__dl_ocn_51q_pyb">
+                
+                    <dt class="- topic/dt dt dlterm" id="topic_yxx_b3q_pyb__encord.dataset.Dataset.create_dicom_series" data-ofbid="topic_yxx_b3q_pyb__encord.dataset.Dataset.create_dicom_series"><strong class="+ topic/ph hi-d/b ph b">create_dicom_series</strong>(<em class="+ topic/ph hi-d/i ph i">file_paths</em>,
+                            <em class="+ topic/ph hi-d/i ph i">cloud_upload_settings=CloudUploadSettings(max_retries=None,
+                            backoff_factor=None, allow_failures=False)</em>, <em class="+ topic/ph hi-d/i ph i">title=None</em>)</dt>
+                    <dd class="- topic/dd dd">
+                        <p class="- topic/p p">Upload a DICOM series to Encord storage</p>
+                        <dl class="- topic/dl dl" id="topic_yxx_b3q_pyb__dl_pcn_51q_pyb" data-ofbid="topic_yxx_b3q_pyb__dl_pcn_51q_pyb">
+                            
+                                <dt class="- topic/dt dt dlterm">Parameters</dt>
+                                <dd class="- topic/dd dd">
+                                    <ul class="- topic/ul ul" id="topic_yxx_b3q_pyb__ul_qcn_51q_pyb" data-ofbid="topic_yxx_b3q_pyb__ul_qcn_51q_pyb">
+                                        <li class="- topic/li li">
+                                            <p class="- topic/p p"><strong class="+ topic/ph hi-d/b ph b">file_paths</strong>
+                                                  (<code class="+ topic/ph pr-d/codeph ph codeph">List</code>[<code class="+ topic/ph pr-d/codeph ph codeph">str</code>]) – a
+                                                list of paths to DICOM files, e.g.
+                                                [‘/home/user/data/DICOM_1.dcm’,
+                                                ‘/home/user/data/DICOM_2.dcm’]</p>
+                                        </li>
+                                        <li class="- topic/li li">
+                                            <p class="- topic/p p"><strong class="+ topic/ph hi-d/b ph b">cloud_upload_settings</strong> (<a class="- topic/xref xref" href="https://python.docs.encord.com/api.html#encord.http.utils.CloudUploadSettings" target="_blank" rel="external noopener"><code class="+ topic/ph pr-d/codeph ph codeph">CloudUploadSettings</code></a>) –
+                                                Settings for uploading data into the cloud. Change
+                                                this object to overwrite the default values.</p>
+                                        </li>
+                                        <li class="- topic/li li">
+                                            <p class="- topic/p p"><strong class="+ topic/ph hi-d/b ph b">title</strong>
+                                                  (<code class="+ topic/ph pr-d/codeph ph codeph">Optional</code>[<code class="+ topic/ph pr-d/codeph ph codeph">str</code>])
+                                                – The title of the DICOM series. If unspecified this
+                                                will be randomly generated for you. This title
+                                                should NOT include an extension. For example
+                                                “encord_image_group”.</p>
+                                        </li>
+                                    </ul>
+                                </dd>
+                            
+                            
+                                <dt class="- topic/dt dt dlterm">Returns</dt>
+                                <dd class="- topic/dd dd">
+                                    <p class="- topic/p p">Bool.</p>
+                                </dd>
+                            
+                            
+                                <dt class="- topic/dt dt dlterm">Raises</dt>
+                                <dd class="- topic/dd dd">
+                                    <p class="- topic/p p"><a class="- topic/xref xref" href="https://python.docs.encord.com/api.html#encord.exceptions.UploadOperationNotSupportedError" target="_blank" rel="external noopener"><strong class="+ topic/ph hi-d/b ph b">UploadOperationNotSupportedError</strong></a> – If
+                                        trying to upload to external datasets (e.g.
+                                        S3/GPC/Azure)</p>
+                                </dd>
+                            
+                        </dl>
+                    </dd>
+                
+            </dl>
+            <pre class="+ topic/pre pr-d/codeblock pre codeblock" id="topic_yxx_b3q_pyb__codeblock_of3_jcq_pyb" data-ofbid="topic_yxx_b3q_pyb__codeblock_of3_jcq_pyb"><code>    def create_dicom_series(
+        self,
+        file_paths: List[str],
+        cloud_upload_settings: CloudUploadSettings = CloudUploadSettings(),
+        title: Optional[str] = None,
+    ):
+        """
+        Upload a DICOM series to Encord storage
+
+        Args:
+            file_paths: a list of paths to DICOM files, e.g.
+                ['/home/user/data/DICOM_1.dcm', '/home/user/data/DICOM_2.dcm']
+            cloud_upload_settings:
+                Settings for uploading data into the cloud. Change this object to overwrite the default values.
+            title:
+                The title of the DICOM series. If unspecified this will be randomly generated for you. This title should
+                NOT include an extension. For example "encord_image_group".
+        Returns:
+            Bool.
+
+        Raises:
+            UploadOperationNotSupportedError: If trying to upload to external
+                                              datasets (e.g. S3/GPC/Azure)
+        """
+        return self._client.create_dicom_series(file_paths, cloud_upload_settings=cloud_upload_settings, title=title)</code></pre>
+        </div>
+    </article>
+    <article class="- topic/topic topic nested1" aria-labelledby="ariaid-title11" id="topic_bfn_d3q_pyb">
+        <h2 class="- topic/title title topictitle2" id="ariaid-title11"><strong class="+ topic/ph hi-d/b ph b">upload_image</strong></h2>
+        <div class="- topic/body body">
+            <dl class="- topic/dl dl" id="topic_bfn_d3q_pyb__dl_rcn_51q_pyb" data-ofbid="topic_bfn_d3q_pyb__dl_rcn_51q_pyb">
+                
+                    <dt class="- topic/dt dt dlterm" id="topic_bfn_d3q_pyb__encord.dataset.Dataset.upload_image" data-ofbid="topic_bfn_d3q_pyb__encord.dataset.Dataset.upload_image"><strong class="+ topic/ph hi-d/b ph b">upload_image</strong>(<em class="+ topic/ph hi-d/i ph i">file_path</em>, <em class="+ topic/ph hi-d/i ph i">title=None</em>,
+                            <em class="+ topic/ph hi-d/i ph i">cloud_upload_settings=CloudUploadSettings(max_retries=None,
+                            backoff_factor=None, allow_failures=False)</em>)</dt>
+                    <dd class="- topic/dd dd">
+                        <p class="- topic/p p">Upload a single image to Encord storage. If your images are sequential we
+                            recommend creating an image group via the <a class="- topic/xref xref" href="https://python.docs.encord.com/api.html#encord.dataset.Dataset.create_image_group" target="_blank" rel="external noopener"><code class="+ topic/ph pr-d/codeph ph codeph">Dataset.create_image_group()</code></a> function.
+                            For more information please compare <a class="- topic/xref xref" href="https://docs.encord.com/docs/annotate-images" target="_blank" rel="external noopener">https://docs.encord.com/docs/annotate-images</a>
+                            and <a class="- topic/xref xref" href="https://docs.encord.com/docs/annotate-videos" target="_blank" rel="external noopener">https://docs.encord.com/docs/annotate-videos</a></p>
+                        <dl class="- topic/dl dl" id="topic_bfn_d3q_pyb__dl_scn_51q_pyb" data-ofbid="topic_bfn_d3q_pyb__dl_scn_51q_pyb">
+                            
+                                <dt class="- topic/dt dt dlterm">Parameters</dt>
+                                <dd class="- topic/dd dd">
+                                    <ul class="- topic/ul ul" id="topic_bfn_d3q_pyb__ul_tcn_51q_pyb" data-ofbid="topic_bfn_d3q_pyb__ul_tcn_51q_pyb">
+                                        <li class="- topic/li li">
+                                            <p class="- topic/p p"><strong class="+ topic/ph hi-d/b ph b">file_path</strong>
+                                                  (<code class="+ topic/ph pr-d/codeph ph codeph">Union</code>[<code class="+ topic/ph pr-d/codeph ph codeph">Path</code>,
+                                                  <code class="+ topic/ph pr-d/codeph ph codeph">str</code>]) – The file path to the
+                                                image</p>
+                                        </li>
+                                        <li class="- topic/li li">
+                                            <p class="- topic/p p"><strong class="+ topic/ph hi-d/b ph b">title</strong>
+                                                  (<code class="+ topic/ph pr-d/codeph ph codeph">Optional</code>[<code class="+ topic/ph pr-d/codeph ph codeph">str</code>])
+                                                – The image title. If unspecified, this will be the
+                                                file name. This title should include an extension.
+                                                For example “encord_image.png”.</p>
+                                        </li>
+                                        <li class="- topic/li li">
+                                            <p class="- topic/p p"><strong class="+ topic/ph hi-d/b ph b">cloud_upload_settings</strong> (<a class="- topic/xref xref" href="https://python.docs.encord.com/api.html#encord.http.utils.CloudUploadSettings" target="_blank" rel="external noopener"><code class="+ topic/ph pr-d/codeph ph codeph">CloudUploadSettings</code></a>) –
+                                                Settings for uploading data into the cloud. Change
+                                                this object to overwrite the default values.</p>
+                                        </li>
+                                    </ul>
+                                </dd>
+                            
+                            
+                                <dt class="- topic/dt dt dlterm">Return type</dt>
+                                <dd class="- topic/dd dd">
+                                    <p class="- topic/p p"><a class="- topic/xref xref" href="https://python.docs.encord.com/api.html#encord.orm.dataset.Image" target="_blank" rel="external noopener"><code class="+ topic/ph pr-d/codeph ph codeph">Image</code></a></p>
+                                </dd>
+                            
+                        </dl>
+                    </dd>
+                
+            </dl>
+            <pre class="+ topic/pre pr-d/codeblock pre codeblock" id="topic_bfn_d3q_pyb__codeblock_ty4_lcq_pyb" data-ofbid="topic_bfn_d3q_pyb__codeblock_ty4_lcq_pyb"><code>    def upload_image(
+        self,
+        file_path: Union[Path, str],
+        title: Optional[str] = None,
+        cloud_upload_settings: CloudUploadSettings = CloudUploadSettings(),
+    ) -&gt; Image:
+        """
+        Upload a single image to Encord storage. If your images are sequential we recommend creating an image group via
+        the :meth:`.Dataset.create_image_group` function. For more information please compare
+        https://docs.encord.com/docs/annotate-images and https://docs.encord.com/docs/annotate-videos
+
+        Args:
+            file_path: The file path to the image
+            title: The image title. If unspecified, this will be the file name. This title should include an extension.
+                For example "encord_image.png".
+            cloud_upload_settings:
+                Settings for uploading data into the cloud. Change this object to overwrite the default values.
+
+        """
+        return self._client.upload_image(file_path, title, cloud_upload_settings)
+</code></pre>
+        </div>
+    </article>
+</article></main></div>
+                        
+                        
+                        
+                        
+                        
+                        
+                    </div>
+                    
+                        <nav role="navigation" id="wh_topic_toc" aria-label="On this page" class="col-lg-2 d-none d-lg-block navbar d-print-none"> 
+                            <div id="wh_topic_toc_content">
+		                        
+	                            <div class=" wh_topic_toc "><div class="wh_topic_label">On this page</div><ul><li class="topic-item"><a href="#topic_awr_pdq_pyb" data-tocid="topic_awr_pdq_pyb"><em class="+ topic/ph hi-d/i ph i">class </em>encord.dataset.<strong class="+ topic/ph hi-d/b ph b">Dataset</strong>(<em class="+ topic/ph hi-d/i ph i">client</em>)</a></li><li class="topic-item"><a href="#topic_hrh_mhq_pyb" data-tocid="topic_hrh_mhq_pyb"><em class="+ topic/ph hi-d/i ph i">property </em><strong class="+ topic/ph hi-d/b ph b">data_rows</strong></a></li><li class="topic-item"><a href="#topic_fls_phq_pyb" data-tocid="topic_fls_phq_pyb"><strong class="+ topic/ph hi-d/b ph b">refetch_data</strong>()</a></li><li class="topic-item"><a href="#topic_vxs_rhq_pyb" data-tocid="topic_vxs_rhq_pyb"><strong class="+ topic/ph hi-d/b ph b">get_dataset</strong>()</a></li><li class="topic-item"><a href="#topic_ywl_5hq_pyb" data-tocid="topic_ywl_5hq_pyb"><strong class="+ topic/ph hi-d/b ph b">set_access_settings</strong></a></li><li class="topic-item"><a href="#topic_k12_whq_pyb" data-tocid="topic_k12_whq_pyb"><strong class="+ topic/ph hi-d/b ph b">add_users</strong></a></li><li class="topic-item"><a href="#topic_glz_xhq_pyb" data-tocid="topic_glz_xhq_pyb"><strong class="+ topic/ph hi-d/b ph b">upload_video</strong></a></li><li class="topic-item"><a href="#topic_jd4_zhq_pyb" data-tocid="topic_jd4_zhq_pyb"><strong class="+ topic/ph hi-d/b ph b">create_image_group</strong></a></li><li class="topic-item"><a href="#topic_yxx_b3q_pyb" data-tocid="topic_yxx_b3q_pyb"><strong class="+ topic/ph hi-d/b ph b">create_dicom_series</strong></a></li><li class="topic-item"><a href="#topic_bfn_d3q_pyb" data-tocid="topic_bfn_d3q_pyb"><strong class="+ topic/ph hi-d/b ph b">upload_image</strong></a></li></ul></div>
+	                        	
+                        	</div>
+                        </nav>
+                    
+                </div>
+            </div>
+            
+            
+            
+        </div> 
+        <footer class="navbar navbar-default wh_footer">
+  <div class=" footer-container mx-auto ">
+    <div>Generated by <a class="oxyFooter" href="http://www.oxygenxml.com/xml_webhelp.html" target="_blank">
+ &lt;oXygen/&gt; XML WebHelp
+ </a></div>
+  </div>
+</footer>
+        
+        <div id="go2top" class="d-print-none">
+            <span class="oxy-icon oxy-icon-up"></span>
+        </div>
+        
+        <div id="modal_img_large" class="modal">
+            <span class="close oxy-icon oxy-icon-remove"></span>
+            <div id="modal_img_container"></div>
+            <div id="caption"></div>
+        </div>
+        
+        
+        
+    </body>
+</html>
